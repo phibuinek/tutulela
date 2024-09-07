@@ -517,7 +517,7 @@ const Header = ({ onMenuToggle }) => {
                 </div>
               )}
               <Link
-                to="/news"
+                to="/blog"
                 className="text-white border-[#3a3a3a] pb-3 border-b-[2px] px-3 py-2 rounded-md text-sm font-medium flex items-center"
               >
                 BLOG
