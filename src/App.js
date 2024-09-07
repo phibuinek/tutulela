@@ -8,14 +8,27 @@ import homeBanner2 from "./assets/banner-trang-chu-3.jpg";
 import homeBanner3 from "./assets/banner-trang-chu-2.jpg";
 import introduceBanner from "./assets/banner/banner-chung-chinh-1920-700-e1697443857714.png";
 import flowerBlogBanner from "./assets/vuon-hoa-hong.jpg";
+import miniatureBlogBanner from "./assets/banner/tieu-canh-trong-nha-avt.jpg";
+import hollidayVillaBlogBanner from "./assets/banner/mau-thiet-ke-biet-thu-hien-dai-kieu-nghi-duong.jpg";
+import gardenBlogBanner from "./assets/banner/den-san-vuon-dep-avt.jpg";
+import cafeBlogBanner from "./assets/banner/ca-phe-dep-nhat.jpg";
+import gardenVillaBlogBanner from "./assets/banner/thiet-ke-biet-thu-nha-vuon-avt.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowUp,
+  faEnvelope,
+  faPhoneAlt,
+} from "@fortawesome/free-solid-svg-icons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import Footer from "./components/Footer";
 import Introduce from "./pages/Introduce";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import FlowerBlog from "./pages/BlogDetail/FlowerBlog";
+import MiniatureBlog from "./pages/BlogDetail/MiniatureBlog";
+import HolidayVillaBlog from "./pages/BlogDetail/HolidayVillaBlog";
+import GardenBlog from "./pages/BlogDetail/GardenBlog";
+import GardenVillaBlog from "./pages/BlogDetail/GardenVillaBlog";
 
 const Layout = ({ children, backgroundImage }) => {
   const location = useLocation();
@@ -23,6 +36,12 @@ const Layout = ({ children, backgroundImage }) => {
   const [isHeaderBgBlack, setIsHeaderBgBlack] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [fadeIn, setFadeIn] = useState(true);
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Cuộn mượt mà
+    });
+  };
 
   const slides = [
     {
@@ -165,13 +184,81 @@ const Layout = ({ children, backgroundImage }) => {
         {location.pathname ===
           "/huong-dan-trong-va-cham-soc-hoa-hong-trong-chau" && (
           <div className="absolute inset-0 flex justify-start items-center">
-            <div>
-              <h1 className={`text-white text-5xl font-bold px-24 lg:pl-44`}>
+            <div className="max-w-[1300px]">
+              <h1
+                className={`text-white text-4xl lg:text-5xl font-bold px-24 lg:pl-44`}
+              >
                 Hướng dẫn trồng và chăm sóc hoa hồng trong chậu đúng kỹ thuật
               </h1>
               <h1 className={`text-white mt-4 pl-24 lg:pl-44`}>
                 Trang chủ » Kiến thức Sân vườn » Hướng dẫn trồng và chăm sóc hoa
                 hồng trong chậu đúng kỹ thuật
+              </h1>
+            </div>
+          </div>
+        )}
+        {location.pathname === "/tieu-canh-trong-nha" && (
+          <div className="absolute inset-0 flex justify-start items-center">
+            <div className="max-w-[1300px]">
+              <h1 className={`text-white text-5xl font-bold pl-24 lg:pl-44`}>
+                #6 thiết kế tiểu cảnh trong nhà đẹp được ưa chuộng nhất 2024
+              </h1>
+              <h1 className={`text-white mt-4 pl-24 lg:pl-44`}>
+                Trang chủ » Kiến thức Sân vườn » #6 thiết kế tiểu cảnh trong nhà
+                đẹp được ưa chuộng nhất 2024
+              </h1>
+            </div>
+          </div>
+        )}
+        {location.pathname === "/thiet-ke-biet-thu-nghi-duong" && (
+          <div className="absolute inset-0 flex justify-start items-center">
+            <div className="max-w-[1300px]">
+              <h1 className={`text-white text-5xl font-bold pl-24 lg:pl-44`}>
+                TOP 10 mẫu thiết kế biệt thự nghỉ dưỡng lộng lẫy, xa hoa
+              </h1>
+              <h1 className={`text-white mt-4 pl-24 lg:pl-44`}>
+                Trang chủ » Kiến thức Sân vườn » TOP 10 mẫu thiết kế biệt thự
+                nghỉ dưỡng lộng lẫy, xa hoa
+              </h1>
+            </div>
+          </div>
+        )}
+        {location.pathname === "/den-san-vuon-dep" && (
+          <div className="absolute inset-0 flex justify-start items-center">
+            <div className="max-w-[1300px]">
+              <h1 className={`text-white text-5xl font-bold pl-24 lg:pl-44`}>
+                Top mẫu đèn sân vườn đẹp, được ưa chuộng nhất 2024
+              </h1>
+              <h1 className={`text-white mt-4 pl-24 lg:pl-44`}>
+                Trang chủ » Kiến thức Sân vườn » Top mẫu đèn sân vườn đẹp, được
+                ưa chuộng nhất 2024
+              </h1>
+            </div>
+          </div>
+        )}
+        {location.pathname ===
+          "/top-nhung-quan-cafe-san-vuon-dep-o-sai-gon" && (
+          <div className="absolute inset-0 flex justify-start items-center">
+            <div className="max-w-[1300px]">
+              <h1 className={`text-white text-5xl font-bold pl-24 lg:pl-44`}>
+                Khám phá top những quán cafe sân vườn đẹp tại Sài Gòn
+              </h1>
+              <h1 className={`text-white mt-4 pl-24 lg:pl-44`}>
+                Trang chủ » Kiến thức Sân vườn » Khám phá top những quán cafe
+                sân vườn đẹp tại Sài Gòn
+              </h1>
+            </div>
+          </div>
+        )}
+        {location.pathname === "/thiet-ke-biet-thu-nha-vuon" && (
+          <div className="absolute inset-0 flex justify-start items-center">
+            <div className="max-w-[1300px]">
+              <h1 className={`text-white text-5xl font-bold pl-24 lg:pl-44`}>
+                Mẫu thiết kế biệt thự nhà vườn sang trọng & lưu ý cần biết
+              </h1>
+              <h1 className={`text-white mt-4 pl-24 lg:pl-44`}>
+                Trang chủ » Kiến thức Kiến trúc » Mẫu thiết kế biệt thự nhà vườn
+                sang trọng & lưu ý cần biết
               </h1>
             </div>
           </div>
@@ -216,6 +303,13 @@ const Layout = ({ children, backgroundImage }) => {
           >
             <FontAwesomeIcon icon={faPhoneAlt} size="lg" />
           </a>
+          <button
+            onClick={scrollToTop}
+            className="p-2 bg-white rounded-full shadow-md hover:bg-gray-200"
+            aria-label="Scroll to top"
+          >
+            <FontAwesomeIcon icon={faArrowUp} size="lg" />
+          </button>
         </div>
       </div>
       <Container
@@ -286,6 +380,51 @@ const App = () => {
           element={
             <Layout backgroundImage={flowerBlogBanner}>
               <FlowerBlog />
+            </Layout>
+          }
+        />
+        <Route
+          path="/tieu-canh-trong-nha"
+          exact
+          element={
+            <Layout backgroundImage={miniatureBlogBanner}>
+              <MiniatureBlog />
+            </Layout>
+          }
+        />
+        <Route
+          path="/thiet-ke-biet-thu-nghi-duong"
+          exact
+          element={
+            <Layout backgroundImage={hollidayVillaBlogBanner}>
+              <HolidayVillaBlog />
+            </Layout>
+          }
+        />
+        <Route
+          path="/den-san-vuon-dep"
+          exact
+          element={
+            <Layout backgroundImage={gardenBlogBanner}>
+              <GardenBlog />
+            </Layout>
+          }
+        />
+        <Route
+          path="/top-nhung-quan-cafe-san-vuon-dep-o-sai-gon"
+          exact
+          element={
+            <Layout backgroundImage={cafeBlogBanner}>
+              <GardenBlog />
+            </Layout>
+          }
+        />
+        <Route
+          path="/thiet-ke-biet-thu-nha-vuon"
+          exact
+          element={
+            <Layout backgroundImage={gardenVillaBlogBanner}>
+              <GardenVillaBlog />
             </Layout>
           }
         />

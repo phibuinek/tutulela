@@ -62,8 +62,11 @@ const blogs = [
 
 const blogUrls = {
   1: "/huong-dan-trong-va-cham-soc-hoa-hong-trong-chau",
-  2: "/thiet-ke-tieu-canh-trong-nha-dep-2024",
-  3: "/top-mau-thiet-ke-biet-thu-nghi-duong",
+  2: "/tieu-canh-trong-nha",
+  3: "/thiet-ke-biet-thu-nghi-duong",
+  4: "/den-san-vuon-dep",
+  5: "/top-nhung-quan-cafe-san-vuon-dep-o-sai-gon",
+  6: "/thiet-ke-biet-thu-nha-vuon",
   // Thêm các URL khác tương ứng với từng blog ID
 };
 
