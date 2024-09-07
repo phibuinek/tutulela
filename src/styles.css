@@ -1,0 +1,100 @@
+.button-effect {
+  position: relative;
+  display: inline-block;
+  padding: 18px 36px;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #1a1a1a; /* Màu viền mặc định */
+  background-color: #1a1a1a; /* Màu nền mặc định */
+  overflow: hidden; /* Đảm bảo hiệu ứng không tràn ra ngoài */
+  transition: color 0.4s, background-color 0.4s, border-color 0.4s;
+  z-index: 1;
+}
+
+.button-effect::before,
+.button-effect::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  pointer-events: none;
+}
+
+.button-effect::before {
+  border-top-color: white;
+  border-right-color: white;
+  transition: all 0.4s ease;
+}
+
+.button-effect::after {
+  border-bottom-color: white;
+  border-left-color: white;
+  transition: all 0.4s ease;
+}
+
+.button-effect:hover::before {
+  width: 0;
+  height: 0;
+}
+
+.button-effect:hover::after {
+  width: 0;
+  height: 0;
+}
+
+.button-effect:hover {
+  color: #000; /* Màu chữ khi hover */
+  background-color: white; /* Màu nền khi hover */
+}
+
+/* styles.css */
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 1000px; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s ease-in-out;
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hover-effect-1 {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 1;
+  padding: 0.5rem 0;
+}
+
+.hover-effect-1::before {
+  conteent:"";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.button-effect:hover::before {
+  transform: translateX(0)
+}
