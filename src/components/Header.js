@@ -45,6 +45,53 @@ const Header = ({ onMenuToggle }) => {
   useEffect(() => {
     setActiveItem(location.pathname);
   }, [location.pathname]);
+
+  const arrowStyle = (active, hover) => ({
+    position: "relative",
+    display: "inline-block",
+    paddingBottom: "0px",
+    color: active || hover ? "#000" : "#000",
+  });
+
+  const arrowAfterStyle = (active, hover) => ({
+    content: '""',
+    position: "absolute",
+    bottom: -32,
+    left: "50%",
+    transform: "translateX(-50%) rotate(180deg)",
+    width: "0",
+    height: "0",
+    borderLeft: "7px solid transparent",
+    borderRight: "7px solid transparent",
+    borderTop: `7px solid ${active || hover ? "white" : "transparent"}`,
+    transition: "border-top 0.3s ease",
+  });
+  const arrowAfterStyle1 = (active, hover) => ({
+    content: '""',
+    position: "absolute",
+    bottom: -32,
+    left: "510px",
+    transform: "translateX(-50%) rotate(180deg)",
+    width: "0",
+    height: "0",
+    borderLeft: "7px solid transparent",
+    borderRight: "7px solid transparent",
+    borderTop: `7px solid ${active || hover ? "white" : "transparent"}`,
+    transition: "border-top 0.3s ease",
+  });
+  const arrowAfterStyle2 = (active, hover) => ({
+    content: '""',
+    position: "absolute",
+    bottom: -32,
+    left: "390px",
+    transform: "translateX(-50%) rotate(180deg)",
+    width: "0",
+    height: "0",
+    borderLeft: "7px solid transparent",
+    borderRight: "7px solid transparent",
+    borderTop: `7px solid ${active || hover ? "white" : "transparent"}`,
+    transition: "border-top 0.3s ease",
+  });
   const menu = (
     <Menu
       className="custom-dropdown-menu"
@@ -57,7 +104,8 @@ const Header = ({ onMenuToggle }) => {
       <Menu.Item key="1">
         <Link
           className="block text-gray-900 px-8 py-2 tracking-wider text-base mt-2"
-          to="/garden-house"
+          to="/dang-ky-bao-gia-thiet-ke-nha-vuon"
+          onMouseEnter={() => setHoverItem("/bao-gia")}
           style={{
             color: "#989898",
           }}
@@ -68,7 +116,8 @@ const Header = ({ onMenuToggle }) => {
       <Menu.Item key="2">
         <Link
           className="block text-gray-900 px-8 py-2 tracking-wider text-base"
-          to="/garden-design"
+          to="/dang-ky-bao-gia-thiet-ke-san-vuon"
+          onMouseEnter={() => setHoverItem("/bao-gia")}
           style={{
             color: "#989898",
           }}
@@ -79,7 +128,8 @@ const Header = ({ onMenuToggle }) => {
       <Menu.Item key="3">
         <Link
           className="block text-gray-900 px-8 py-2 tracking-wider text-base"
-          to="/farmstay"
+          to="/dang-ky-bao-gia-thiet-ke-farmstay"
+          onMouseEnter={() => setHoverItem("/bao-gia")}
           style={{
             color: "#989898",
           }}
@@ -90,7 +140,8 @@ const Header = ({ onMenuToggle }) => {
       <Menu.Item key="4">
         <Link
           className="block text-gray-900 px-8 py-2 tracking-wider text-base mb-2"
-          to="/service-area"
+          to="/dang-ky-bao-gia-thiet-ke-khu-dich-vu"
+          onMouseEnter={() => setHoverItem("/bao-gia")}
           style={{
             color: "#989898",
           }}
@@ -166,53 +217,6 @@ const Header = ({ onMenuToggle }) => {
       </Menu.Item>
     </Menu>
   );
-
-  const arrowStyle = (active, hover) => ({
-    position: "relative",
-    display: "inline-block",
-    paddingBottom: "0px",
-    color: active || hover ? "#000" : "#000",
-  });
-
-  const arrowAfterStyle = (active, hover) => ({
-    content: '""',
-    position: "absolute",
-    bottom: -32,
-    left: "50%",
-    transform: "translateX(-50%) rotate(180deg)",
-    width: "0",
-    height: "0",
-    borderLeft: "7px solid transparent",
-    borderRight: "7px solid transparent",
-    borderTop: `7px solid ${active || hover ? "white" : "transparent"}`,
-    transition: "border-top 0.3s ease",
-  });
-  const arrowAfterStyle1 = (active, hover) => ({
-    content: '""',
-    position: "absolute",
-    bottom: -32,
-    left: "510px",
-    transform: "translateX(-50%) rotate(180deg)",
-    width: "0",
-    height: "0",
-    borderLeft: "7px solid transparent",
-    borderRight: "7px solid transparent",
-    borderTop: `7px solid ${active || hover ? "white" : "transparent"}`,
-    transition: "border-top 0.3s ease",
-  });
-  const arrowAfterStyle2 = (active, hover) => ({
-    content: '""',
-    position: "absolute",
-    bottom: -32,
-    left: "390px",
-    transform: "translateX(-50%) rotate(180deg)",
-    width: "0",
-    height: "0",
-    borderLeft: "7px solid transparent",
-    borderRight: "7px solid transparent",
-    borderTop: `7px solid ${active || hover ? "white" : "transparent"}`,
-    transition: "border-top 0.3s ease",
-  });
 
   return (
     <header
@@ -307,16 +311,16 @@ const Header = ({ onMenuToggle }) => {
                 placement="bottomLeft"
               >
                 <Link
-                  to="/blog"
+                  to="/bao-gia"
                   className="text-white px-3 py-2 rounded-md text-md font-normal"
-                  onMouseEnter={() => setHoverItem("/news")}
+                  onMouseEnter={() => setHoverItem("/bao-gia")}
                   onMouseLeave={() => setHoverItem(null)}
                 >
                   BÁO GIÁ
                   <FontAwesomeIcon icon={faCaretDown} className="ml-2" />
                   <span
                     style={arrowAfterStyle1(
-                      activeItem === "/blog" || hoverItem === "/blog"
+                      activeItem === "/bao-gia" || hoverItem === "/bao-gia"
                     )}
                   />
                 </Link>
@@ -402,67 +406,80 @@ const Header = ({ onMenuToggle }) => {
 
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <Link
+                onClick={toggleMenu}
                 to="/"
                 className="text-white border-[#3a3a3a] pb-3 border-b-[2px] block px-3 py-2 rounded-md text-sm font-medium pt-16"
               >
                 TRANG CHỦ
               </Link>
               <Link
+                onClick={toggleMenu}
                 to="/gioi-thieu"
                 className="text-white border-[#3a3a3a] pb-3 border-b-[2px] block px-3 py-2 rounded-md text-sm font-medium"
               >
                 GIỚI THIỆU
               </Link>
               <Link
+                onClick={toggleMenu}
                 to="/services"
                 className="text-white border-[#3a3a3a] pb-3 border-b-[2px] block px-3 py-2 rounded-md text-sm font-medium"
               >
                 DỰ ÁN
               </Link>
-              <Link
-                className="text-white border-[#3a3a3a] pb-3 border-b-[2px] px-3 py-2 rounded-md text-sm font-medium flex items-center"
-                onClick={toggleDropdown}
-              >
-                DỊCH VỤ
+              <div className="text-white border-[#3a3a3a] pb-3 border-b-[2px] px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                <Link
+                  onClick={toggleMenu}
+                  to="/your-link" // Thay "/your-link" bằng URL bạn muốn điều hướng đến
+                  className="flex-grow"
+                >
+                  DỊCH VỤ
+                </Link>
                 {isDropdownOpen ? (
                   <ChevronUpIcon
-                    className="ml-2 mt-1 h-5 w-5"
+                    onClick={toggleDropdown}
+                    className="ml-2 mt-1 h-5 w-5 cursor-pointer"
                     aria-hidden="true"
                   />
                 ) : (
                   <ChevronDownIcon
-                    className="ml-2 mt-1 h-5 w-5"
+                    onClick={toggleDropdown}
+                    className="ml-2 mt-1 h-5 w-5 cursor-pointer"
                     aria-hidden="true"
                   />
                 )}
-              </Link>
+              </div>
               {isDropdownOpen && (
                 <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 mt-2">
                   <Link
+                    onClick={toggleMenu}
                     to="/service1"
                     className="text-white border-[#3a3a3a] border-b-[2px] block px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Thiết Kế Và Thi Công Kiến Trúc
                   </Link>
                   <Link
+                    onClick={toggleMenu}
                     to="/service2"
                     className="text-white border-[#3a3a3a] border-b-[2px] block px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Thiết Kế Và Thi Công Cảnh Quan
                   </Link>
                   <Link
+                    onClick={toggleMenu}
                     to="/service3"
                     className="text-white border-[#3a3a3a] border-b-[2px] block px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Thiết Kế Và Thi Công Nhà Vườn
                   </Link>
                   <Link
+                    onClick={toggleMenu}
                     to="/service3"
                     className="text-white border-[#3a3a3a] border-b-[2px] block px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Thiết Kế Và Thi Công Sân Vườn
                   </Link>
                   <Link
+                    onClick={toggleMenu}
                     to="/service3"
                     className="text-white border-[#3a3a3a] border-b-[2px] block px-3 py-2 rounded-md text-sm font-medium"
                   >
@@ -470,46 +487,50 @@ const Header = ({ onMenuToggle }) => {
                   </Link>
                 </div>
               )}
-              <Link
-                to="/blog"
-                className="text-white border-[#3a3a3a] pb-3 border-b-[2px] px-3 py-2 rounded-md text-sm font-medium flex items-center"
-                onClick={toggleDropdown1}
-              >
-                BÁO GIÁ
+              <div className="text-white border-[#3a3a3a] pb-3 border-b-[2px] px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                <Link onClick={toggleMenu} to="/bao-gia" className="flex-grow">
+                  BÁO GIÁ
+                </Link>
                 {isDropdownOpen1 ? (
                   <ChevronUpIcon
-                    className="ml-2 mt-1 h-5 w-5"
+                    onClick={toggleDropdown1}
+                    className="ml-2 mt-1 h-5 w-5 cursor-pointer"
                     aria-hidden="true"
                   />
                 ) : (
                   <ChevronDownIcon
-                    className="ml-2 mt-1 h-5 w-5"
+                    onClick={toggleDropdown1}
+                    className="ml-2 mt-1 h-5 w-5 cursor-pointer"
                     aria-hidden="true"
                   />
                 )}
-              </Link>
+              </div>
               {isDropdownOpen1 && (
                 <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 mt-2">
                   <Link
-                    to="/service1"
+                    onClick={toggleMenu}
+                    to="/dang-ky-bao-gia-thiet-ke-nha-vuon"
                     className="text-white border-[#3a3a3a] border-b-[2px] block px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Báo giá thiết kế nhà vườn
                   </Link>
                   <Link
-                    to="/service2"
+                    onClick={toggleMenu}
+                    to="/dang-ky-bao-gia-thiet-ke-san-vuon"
                     className="text-white border-[#3a3a3a] border-b-[2px] block px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Báo giá thiết kế sân vườn
                   </Link>
                   <Link
-                    to="/service3"
+                    onClick={toggleMenu}
+                    to="//dang-ky-bao-gia-thiet-ke-farmstay"
                     className="text-white border-[#3a3a3a] border-b-[2px] block px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Báo giá thiết kế farmstay
                   </Link>
                   <Link
-                    to="/service3"
+                    onClick={toggleMenu}
+                    to="/dang-ky-bao-gia-thiet-ke-khu-dich-vu"
                     className="text-white border-[#3a3a3a] border-b-[2px] block px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Báo giá thiết kế khu dịch vụ
@@ -517,12 +538,14 @@ const Header = ({ onMenuToggle }) => {
                 </div>
               )}
               <Link
+                onClick={toggleMenu}
                 to="/blog"
                 className="text-white border-[#3a3a3a] pb-3 border-b-[2px] px-3 py-2 rounded-md text-sm font-medium flex items-center"
               >
                 BLOG
               </Link>
               <Link
+                onClick={toggleMenu}
                 to="/lien-he"
                 className="text-white border-[#3a3a3a] pb-3 border-b-[2px] px-3 py-2 rounded-md text-sm font-medium flex items-center"
               >

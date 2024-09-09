@@ -76,43 +76,43 @@ const Home = ({ isMenuOpen }) => {
         <div className="text-4xl text-black font-bold mt-2">
           Dịch vụ chúng tôi cung cấp
         </div>
-        <div className="mt-6 lg:grid lg:grid-cols-4 mb-4 lg:w-[1400px]">
-          <div className="lg:col-span-1 lg:mt-0 sm:mb-10 sm:mt-10">
-            <Link className="flex space-x-4 border-2 border-[#7a7a7a] p-1 h-[90px] w-[300px]">
-              <div className="border-[#7a7a7a] bg-[#7a7a7a] text-white font-bold text-5xl pt-3 pb-2 my-1 px-4">
+        <div className="mt-6 grid grid-cols-[repeat(auto-fill,_minmax(300px,_1fr))] mb-4 mx-auto">
+          <div className="col-span-1 w-[300px]">
+            <Link className="flex space-x-4 border-2 border-[#7a7a7a] p-1 h-[90px] w-[300px] mx-auto">
+              <div className="bg-[#7a7a7a] text-white font-bold text-5xl pt-3 pb-2 my-1 px-4">
                 1
               </div>
-              <div className="mt-3 font-bold text-2xl">
+              <div className="mt-3 font-bold text-xl lg:text-2xl">
                 Thiết kế thi công cảnh quan
               </div>
             </Link>
           </div>
-          <div className="lg:col-span-1 lg:mt-0 mt-4">
-            <Link className="flex space-x-4 border-2 border-[#7a7a7a] p-1 h-[90px] w-[300px]">
-              <div className="border-[#7a7a7a] bg-[#7a7a7a] text-white font-bold text-5xl pt-3 pb-2 my-1 px-4">
+          <div className="col-span-1 w-[300px]">
+            <Link className="flex space-x-4 border-2 border-[#7a7a7a] p-1 h-[90px] w-[300px] mx-auto">
+              <div className="bg-[#7a7a7a] text-white font-bold text-5xl pt-3 pb-2 my-1 px-4">
                 2
               </div>
-              <div className="mt-3 font-bold text-2xl">
+              <div className="mt-3 font-bold text-xl lg:text-2xl">
                 Thiết kế thi công nhà vườn
               </div>
             </Link>
           </div>
-          <div className="lg:col-span-1 lg:mt-0 mt-4">
-            <Link className="flex space-x-4 border-2 border-[#7a7a7a] p-1 h-[90px] w-[300px]">
-              <div className="border-[#7a7a7a] bg-[#7a7a7a] text-white font-bold text-5xl pt-3 pb-2 my-1 px-4">
+          <div className="col-span-1">
+            <Link className="flex space-x-4 border-2 border-[#7a7a7a] p-1 h-[90px] w-[300px] mx-auto">
+              <div className="bg-[#7a7a7a] text-white font-bold text-5xl pt-3 pb-2 my-1 px-4">
                 3
               </div>
-              <div className="mt-3 font-bold text-2xl">
+              <div className="mt-3 font-bold text-xl lg:text-2xl">
                 Thiết kế thi công sân vườn
               </div>
             </Link>
           </div>
-          <div className="lg:col-span-1 lg:mt-0 mt-4">
-            <Link className="flex space-x-4 border-2 border-[#7a7a7a] p-1 h-[90px] w-[300px]">
-              <div className="border-[#7a7a7a] bg-[#7a7a7a] text-white font-bold text-5xl pt-3 pb-2 my-1 px-4">
+          <div className="col-span-1">
+            <Link className="flex space-x-4 border-2 border-[#7a7a7a] p-1 h-[90px] w-[300px] mx-auto">
+              <div className="bg-[#7a7a7a] text-white font-bold text-5xl pt-3 pb-2 my-1 px-4">
                 4
               </div>
-              <div className="mt-3 font-bold text-2xl">
+              <div className="mt-3 font-bold text-xl lg:text-2xl">
                 Thiết kế thi công hồ cá koi
               </div>
             </Link>
@@ -241,8 +241,8 @@ const Home = ({ isMenuOpen }) => {
           </div>
         </div>
         <div>
-          <div className="lg:grid lg:grid-cols-3 justify-center items-center lg:ml-72 lg:w-[1200px] mb-10 lg:mt-10">
-            <div className="lg:col-span-1 justify-center mt-4 flex">
+          <div className="grid grid-cols-[repeat(auto-fill,_minmax(420px,_1fr))] gap-y-4 justify-center items-center mx-auto mb-10 lg:mt-10 max-w-[1500px]">
+            <div className=" justify-center mt-4 flex">
               <div className="w-[420px] lg:w-[370px] h-[320px] bg-[#efefef] group hover:bg-[#1a1a1a] transition duration-300 ease-in-out">
                 <div className="text-[#dbad4d] text-8xl font-bold text-center pt-4 transition duration-300 ease-in-out">
                   1
@@ -256,7 +256,7 @@ const Home = ({ isMenuOpen }) => {
                 </div>
               </div>
             </div>
-            <div className="lg:col-span-1 justify-center mt-4 flex">
+            <div className=" justify-center mt-4 flex">
               <div className="w-[420px] lg:w-[370px] h-[320px] bg-[#efefef] group hover:bg-[#1a1a1a] transition duration-300 ease-in-out">
                 <div className="text-[#dbad4d] text-8xl font-bold text-center pt-4 transition duration-300 ease-in-out">
                   2
@@ -270,7 +270,7 @@ const Home = ({ isMenuOpen }) => {
                 </div>
               </div>
             </div>
-            <div className="lg:col-span-1 justify-center mt-4 flex">
+            <div className=" justify-center mt-4 flex">
               <div className="w-[420px] lg:w-[370px] h-[320px] bg-[#efefef] group hover:bg-[#1a1a1a] transition duration-300 ease-in-out">
                 <div className="text-[#dbad4d] text-8xl font-bold text-center pt-4 transition duration-300 ease-in-out">
                   3
@@ -283,8 +283,6 @@ const Home = ({ isMenuOpen }) => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="lg:grid lg:grid-cols-3 justify-center items-center lg:ml-72 lg:w-[1200px] mb-10 lg:mt-10">
             <div className="lg:col-span-1 justify-center mt-4 flex">
               <div className="w-[420px] lg:w-[370px] h-[320px] bg-[#efefef] group hover:bg-[#1a1a1a] transition duration-300 ease-in-out">
                 <div className="text-[#dbad4d] text-8xl font-bold text-center pt-4 transition duration-300 ease-in-out">
@@ -328,7 +326,7 @@ const Home = ({ isMenuOpen }) => {
             </div>
           </div>
         </div>
-        <div className="justify-center lg:flex  items-center lg:gap-x-36">
+        <div className="justify-center lg:flex grid grid-auto-fill-100  items-center lg:gap-x-36">
           <div className="lg:ml-0 text-center lg:mb-0 mb-10">
             <h1 className="text-[#c5c5c5] text-5xl">(70+)</h1>
             <h1 className="text-black text-3xl ml-4 mt-2 font-semibold">
@@ -336,19 +334,19 @@ const Home = ({ isMenuOpen }) => {
             </h1>
           </div>
           <div className="lg:ml-0 text-center lg:mb-0 mb-10">
-            <h1 className="text-[#c5c5c5] text-5xl ml-16">(10+)</h1>
+            <h1 className="text-[#c5c5c5] text-5xl">(10+)</h1>
             <h1 className="text-black text-3xl mt-2 font-semibold">
               NĂM KINH NGHIỆM
             </h1>
           </div>
           <div className="lg:ml-0 text-center lg:mb-0 mb-10">
-            <h1 className="text-[#c5c5c5] text-5xl ml-8">(50+)</h1>
+            <h1 className="text-[#c5c5c5] text-5xl">(50+)</h1>
             <h1 className="text-black text-3xl mt-2 font-semibold">
               KHÁCH HÀNG
             </h1>
           </div>
           <div className="lg:ml-0 text-center lg:mb-0 mb-10">
-            <h1 className="text-[#c5c5c5] text-5xl ml-12">(2)</h1>
+            <h1 className="text-[#c5c5c5] text-5xl">(2)</h1>
             <h1 className="text-black text-3xl mt-2 font-semibold">
               VĂN PHÒNG
             </h1>
@@ -366,9 +364,12 @@ const Home = ({ isMenuOpen }) => {
               Mọi sự hài lòng của bạn là niềm kiêu hãnh của chúng tôi!
             </div>
           </div>
-          <button className="mt-4 lg:mt-24 lg:mr-36 px-9 py-4 text-black text-xs uppercase font-bold border border-[#1a1a1a] bg-white transition-all duration-500 hover:text-white hover:border-white bg-gradient-to-r from-transparent to-transparent bg-[length:0%_100%] bg-left-bottom hover:bg-[length:100%_100%] hover:bg-[#1a1a1a]">
+          <Link
+            to="/lien-he"
+            className="mt-4 lg:mt-24 lg:mr-36 px-9 py-4 text-black text-xs uppercase font-bold border border-[#1a1a1a] bg-white transition-all duration-500 hover:text-white hover:border-white bg-gradient-to-r from-transparent to-transparent bg-[length:0%_100%] bg-left-bottom hover:bg-[length:100%_100%] hover:bg-[#1a1a1a]"
+          >
             NHẬN TƯ VẤN
-          </button>
+          </Link>
         </div>
         <div>
           <div className="lg:grid lg: grid-cols-2 lg:justify-center lg:items-center pl-10 ">
@@ -453,46 +454,59 @@ const Home = ({ isMenuOpen }) => {
               Tin tức kiến trúc cảnh quan
             </div>
           </div>
-          <button className="ml-auto lg:mr-48 inline-block lg:mt-0 mt-4 px-9 py-4 text-white text-xs uppercase font-bold border border-[#1a1a1a] bg-[#1a1a1a] bg-gradient-to-r from-[#1a1a1a] to-[#1a1a1a] bg-[length:100%_100%] hover:bg-[length:0%_100%] transition-all duration-300 hover:text-black hover:bg-white">
+          <Link
+            to="/blog"
+            className="ml-auto lg:mr-48 inline-block lg:mt-10 mt-4 px-9 py-4 text-white text-xs uppercase font-bold border border-[#1a1a1a] bg-[#1a1a1a] bg-gradient-to-r from-[#1a1a1a] to-[#1a1a1a] bg-[length:100%_100%] hover:bg-[length:0%_100%] transition-all duration-300 hover:text-black hover:bg-white"
+          >
             XEM TẤT CẢ
-          </button>
+          </Link>
         </div>
         <div className="lg:ml-24 ml-4 text-xl mt-6">
           Cập nhật những thông tin mới nhất về hoạt động của SGL Vietnam và
           những kinh nghiệm, kiến thức về lĩnh vực kiến trúc – cảnh quan – sân
           vườn từ chuyên gia
         </div>
-        <div className="lg:flex gap-[30px] lg:w-full lg:pl-56 mt-4  ml-4">
-          <div className="w-[390px] mt-10 group cursor-pointer">
+        <div className="grid grid-cols-[repeat(auto-fill,_minmax(400px,_1fr))] lg:pl-24 md:pl-12 pl-4">
+          <Link
+            to="/huong-dan-trong-va-cham-soc-hoa-hong-trong-chau"
+            className="w-[390px] mt-10 group cursor-pointer "
+          >
             <Image
-              className="w-[390px] h-[250px]"
+              className="w-[400px] h-[250px]"
               src={require("../assets/vuon-hoa-hong.jpg")}
             />
             <div className="mt-4 text-xl font-semibold group-hover:text-[#7a7a7a]">
               Hướng dẫn trồng và chăm sóc hoa hồng trong chậu đúng kỹ thuật
             </div>
-          </div>
-          <div className="w-[390px] mt-10  group cursor-pointer">
+          </Link>
+          <Link
+            to="/tieu-canh-trong-nha"
+            className="w-[390px] mt-10  group cursor-pointer "
+          >
             <Image
-              className="w-full h-[250px]"
+              className="w-[400px] h-[250px]"
               src={require("../assets/../assets/tieu-canh-trong-nha-avt-405x228.jpg")}
             />
             <div className="mt-4 text-xl font-semibold group-hover:text-[#7a7a7a]">
               #6 thiết kế tiểu cảnh trong nhà đẹp được ưa chuộng nhất 2024
             </div>
-          </div>
-          <div className="w-[390px] mt-10 group cursor-pointer">
+          </Link>
+          <Link
+            to="/thiet-ke-biet-thu-nghi-duong"
+            className="w-[390px] mt-10 group cursor-pointer "
+          >
             <Image
-              className="w-full h-[250px]"
+              className="w-[400px] h-[250px]"
               src={require("../assets/mau-thiet-ke-biet-thu-hien-dai-kieu-nghi-duong-405x228.jpg")}
             />
             <div className="mt-4 text-xl font-semibold group-hover:text-[#7a7a7a]">
               TOP 10 mẫu thiết kế biệt thự nghỉ dưỡng lộng lẫy, xa hoa
             </div>
-          </div>
-        </div>
-        <div className="lg:flex gap-[30px] lg:w-full lg:pl-56   ml-4">
-          <div className="w-[390px] mt-10 group cursor-pointer">
+          </Link>
+          <Link
+            to="/den-san-vuon-dep"
+            className="w-[390px] mt-10 group cursor-pointer"
+          >
             <Image
               className="w-[390px] h-[250px]"
               src={require("../assets/den-san-vuon-dep-avt-405x228.jpg")}
@@ -500,8 +514,11 @@ const Home = ({ isMenuOpen }) => {
             <div className="mt-4 text-xl font-semibold group-hover:text-[#7a7a7a]">
               Top mẫu đèn sân vườn đẹp, được ưa chuộng nhất 2024
             </div>
-          </div>
-          <div className="w-[390px] mt-10  group cursor-pointer">
+          </Link>
+          <Link
+            to="/top-nhung-quan-cafe-san-vuon-dep-o-sai-gon"
+            className="w-[390px] mt-10  group cursor-pointer"
+          >
             <Image
               className="w-full h-[250px]"
               src={require("../assets/../assets/ca-phe-dep-nhat-405x228.jpg")}
@@ -509,8 +526,11 @@ const Home = ({ isMenuOpen }) => {
             <div className="mt-4 text-xl font-semibold group-hover:text-[#7a7a7a]">
               Khám phá top những quán cafe sân vườn đẹp tại Sài Gòn
             </div>
-          </div>
-          <div className="w-[390px] mt-10 group cursor-pointer">
+          </Link>
+          <Link
+            to="/thiet-ke-biet-thu-nha-vuon"
+            className="w-[390px] mt-10 group cursor-pointer"
+          >
             <Image
               className="w-full h-[250px]"
               src={require("../assets/thiet-ke-biet-thu-nha-vuon-avt-405x228.jpg")}
@@ -518,7 +538,7 @@ const Home = ({ isMenuOpen }) => {
             <div className="mt-4 text-xl font-semibold group-hover:text-[#7a7a7a]">
               Mẫu thiết kế biệt thự nhà vườn sang trọng & lưu ý cần biết
             </div>
-          </div>
+          </Link>
         </div>
         <div className="flex justify-center items-center mt-4">
           <Image
