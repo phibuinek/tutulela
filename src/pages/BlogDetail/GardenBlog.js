@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { Image } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import {
   FacebookShareButton,
   FacebookIcon,
@@ -46,8 +47,8 @@ const GardenBlog = () => {
 
   return (
     <div className="mt-10">
-      <div className="lg:grid lg:grid-cols-4">
-        <div className="lg:col-span-3 lg:pl-48 md:pl-36 pl-4 text-lg mb-4">
+      <div className="grid grid-cols-[repeat(auto-fill,_minmax(350px,_1fr))]">
+        <div className="col-span-3 lg:pl-48 md:pl-36 pl-4 text-lg mb-4">
           <div className="flex flex-wrap text-sm text-[#959595]">
             <div className="flex">
               <Image
@@ -448,7 +449,7 @@ const GardenBlog = () => {
             <h1 className="mt-4 font-bold italic">Ảnh: Tham khảo internet</h1>
           </div>
         </div>
-        <div className="lg:col-span-1 md:pr-10">
+        <div className="lg:col-span-1 ">
           <div className="pb-4 border border-[#f4f4f4] w-[350px]">
             <div className="bg-[#f4f4f4] p-6 text-2xl font-semibold">
               NỘI DUNG CHÍNH
@@ -587,7 +588,10 @@ const GardenBlog = () => {
               BÀI VIẾT MỚI
             </div>
             <div className="pl-4 space-y-2 mt-4">
-              <div className="flex space-x-4 text-[#82858a]">
+              <Link
+                to="/huong-dan-trong-va-cham-soc-hoa-hong-trong-chau"
+                className="flex space-x-4 text-[#82858a]"
+              >
                 <Image
                   className="w-10 h-10 rounded mt-1"
                   src={require("../../assets/vuon-hoa-hong.jpg")}
@@ -595,10 +599,13 @@ const GardenBlog = () => {
                 <h1>
                   Hướng dẫn trồng và chăm sóc hoa hồng trong chậu đúng kỹ thuật
                 </h1>
-              </div>
+              </Link>
             </div>
             <div className="pl-4 space-y-2 mt-4">
-              <div className="flex space-x-4 text-[#82858a]">
+              <Link
+                to="/tieu-canh-trong-nha"
+                className="flex space-x-4 text-[#82858a]"
+              >
                 <Image
                   className="w-10 h-10 rounded mt-1"
                   src={require("../../assets/tieu-canh-trong-nha-avt-405x228.jpg")}
@@ -606,10 +613,13 @@ const GardenBlog = () => {
                 <h1>
                   #6 thiết kế tiểu cảnh trong nhà đẹp được ưa chuộng nhất 2024
                 </h1>
-              </div>
+              </Link>
             </div>
             <div className="pl-4 space-y-2 mt-4">
-              <div className="flex space-x-4 text-[#82858a]">
+              <Link
+                to="/thiet-ke-biet-thu-nghi-duong"
+                className="flex space-x-4 text-[#82858a]"
+              >
                 <Image
                   className="w-10 h-10 rounded mt-1"
                   src={require("../../assets/mau-thiet-ke-biet-thu-hien-dai-kieu-nghi-duong-405x228.jpg")}
@@ -617,19 +627,25 @@ const GardenBlog = () => {
                 <h1>
                   TOP 10 mẫu thiết kế biệt thự nghỉ dưỡng lộng lẫy, xa hoa
                 </h1>
-              </div>
+              </Link>
             </div>
             <div className="pl-4 space-y-2 mt-4">
-              <div className="flex space-x-4 text-[#82858a]">
+              <Link
+                to="/top-nhung-quan-cafe-san-vuon-dep-o-sai-gon"
+                className="flex space-x-4 text-[#82858a]"
+              >
                 <Image
                   className="w-10 h-10 rounded mt-1"
                   src={require("../../assets/ca-phe-dep-nhat-405x228.jpg")}
                 />
                 <h1>Khám phá top những quán cafe sân vườn đẹp tại Sài Gòn</h1>
-              </div>
+              </Link>
             </div>
             <div className="pl-4 space-y-2 mt-4">
-              <div className="flex space-x-4 text-[#82858a]">
+              <Link
+                to="/thiet-ke-biet-thu-nha-vuon"
+                className="flex space-x-4 text-[#82858a]"
+              >
                 <Image
                   className="w-10 h-10 rounded mt-1"
                   src={require("../../assets/thiet-ke-biet-thu-nha-vuon-avt-405x228.jpg")}
@@ -637,7 +653,7 @@ const GardenBlog = () => {
                 <h1>
                   Mẫu thiết kế biệt thự nhà vườn sang trọng & lưu ý cần biết
                 </h1>
-              </div>
+              </Link>
             </div>
           </div>
           <div className=" border border-[#f4f4f4] w-[350px] md:mt-24 mt-10">

@@ -36,8 +36,8 @@ const MiniatureBlog = () => {
 
   return (
     <div className="mt-10">
-      <div className="lg:grid lg:grid-cols-4">
-        <div className="lg:col-span-3 lg:pl-48 md:pl-36 pl-4 text-lg mb-4">
+      <div className="grid grid-cols-[repeat(auto-fill,_minmax(350px,_1fr))]">
+        <div className="col-span-3 lg:pl-48 md:pl-36 pl-4 text-lg mb-4">
           <div className="flex flex-wrap text-sm text-[#959595]">
             <div className="flex">
               <Image
@@ -325,7 +325,7 @@ const MiniatureBlog = () => {
             <h1 className="mt-4 font-bold italic">Ảnh: Tham khảo internet</h1>
           </div>
         </div>
-        <div className="lg:col-span-1 md:pr-10">
+        <div className="col-span-1">
           <div className="pb-4 border border-[#f4f4f4] w-[350px]">
             <div className="bg-[#f4f4f4] p-6 text-2xl font-semibold">
               NỘI DUNG CHÍNH

@@ -29,6 +29,12 @@ import MiniatureBlog from "./pages/BlogDetail/MiniatureBlog";
 import HolidayVillaBlog from "./pages/BlogDetail/HolidayVillaBlog";
 import GardenBlog from "./pages/BlogDetail/GardenBlog";
 import GardenVillaBlog from "./pages/BlogDetail/GardenVillaBlog";
+import CafeBlog from "./pages/BlogDetail/CafeBlog";
+import GardenHousePrice from "./pages/Price/GardenHousePrice";
+import GardenPrice from "./pages/Price/GardenPrice";
+import FarmStayPrice from "./pages/Price/FarmStayPrice";
+import ServiceAreaPrice from "./pages/Price/ServiceAreaPrice";
+import Price from "./pages/Price";
 
 const Layout = ({ children, backgroundImage }) => {
   const location = useLocation();
@@ -135,7 +141,7 @@ const Layout = ({ children, backgroundImage }) => {
         }}
       >
         <div
-          className={`inset-0 lg:fixed lg:z-40 z-50 transition-colors h-[96px] duration-300 ${
+          className={`inset-0 md:fixed lg:z-40 z-50 transition-colors h-[96px] duration-300 ${
             isHeaderBgBlack ? "bg-[#1a1a1a]" : "bg-transparent"
           }`}
         >
@@ -263,6 +269,44 @@ const Layout = ({ children, backgroundImage }) => {
             </div>
           </div>
         )}
+        {location.pathname === "/dang-ky-bao-gia-thiet-ke-nha-vuon" && (
+          <div className="absolute inset-0 flex justify-start items-center">
+            <div className="max-w-[1300px]">
+              <h1 className={`text-white text-5xl font-bold pl-24 lg:pl-44`}>
+                Đăng ký báo giá thiết kế nhà vườn
+              </h1>
+              <h1 className={`text-white mt-4 pl-24 lg:pl-44`}>
+                Trang chủ » Bảng báo giá thiết kế thi công cảnh quan sân vườn »
+                Đăng ký báo giá thiết kế nhà vườn
+              </h1>
+            </div>
+          </div>
+        )}
+        {location.pathname === "/dang-ky-bao-gia-thiet-ke-khu-dich-vu" && (
+          <div className="absolute inset-0 flex justify-start items-center">
+            <div className="max-w-[1300px]">
+              <h1 className={`text-white text-5xl font-bold pl-24 lg:pl-44`}>
+                Đăng ký báo giá thiết kế khu dịch vụ
+              </h1>
+              <h1 className={`text-white mt-4 pl-24 lg:pl-44`}>
+                Trang chủ » Bảng báo giá thiết kế thi công cảnh quan sân vườn »
+                Đăng ký báo giá thiết kế khu dịch vụ
+              </h1>
+            </div>
+          </div>
+        )}
+        {location.pathname === "/bao-gia" && (
+          <div className="absolute inset-0 flex justify-start items-center">
+            <div className="max-w-[1300px]">
+              <h1 className={`text-white text-5xl font-bold pl-24 lg:pl-44`}>
+                Bảng báo giá thiết kế thi công cảnh quan sân vườn
+              </h1>
+              <h1 className={`text-white mt-4 pl-24 lg:pl-44`}>
+                Trang chủ » Bảng báo giá thiết kế thi công cảnh quan sân vườn
+              </h1>
+            </div>
+          </div>
+        )}
 
         {location.pathname === "/" && (
           <div className="absolute right-0 bottom-0 flex">
@@ -290,14 +334,14 @@ const Layout = ({ children, backgroundImage }) => {
             <FontAwesomeIcon icon={faEnvelope} size="lg" />
           </a>
           <a
-            href="https://zalo.me/1234567890"
+            href="https://zalo.me/0868844420"
             className="p-2 bg-white rounded-full shadow-md hover:bg-gray-200"
             aria-label="Contact via Zalo"
           >
             <FontAwesomeIcon icon={faWhatsapp} size="lg" />
           </a>
           <a
-            href="tel:+1234567890"
+            href="tel:+84868844420"
             className="p-2 bg-white rounded-full shadow-md hover:bg-gray-200"
             aria-label="Contact via Phone"
           >
@@ -415,7 +459,7 @@ const App = () => {
           exact
           element={
             <Layout backgroundImage={cafeBlogBanner}>
-              <GardenBlog />
+              <CafeBlog />
             </Layout>
           }
         />
@@ -425,6 +469,51 @@ const App = () => {
           element={
             <Layout backgroundImage={gardenVillaBlogBanner}>
               <GardenVillaBlog />
+            </Layout>
+          }
+        />
+        <Route
+          path="/dang-ky-bao-gia-thiet-ke-nha-vuon"
+          exact
+          element={
+            <Layout backgroundImage={introduceBanner}>
+              <GardenHousePrice />
+            </Layout>
+          }
+        />
+        <Route
+          path="/dang-ky-bao-gia-thiet-ke-san-vuon"
+          exact
+          element={
+            <Layout backgroundImage={introduceBanner}>
+              <GardenPrice />
+            </Layout>
+          }
+        />
+        <Route
+          path="/dang-ky-bao-gia-thiet-ke-farmstay"
+          exact
+          element={
+            <Layout backgroundImage={introduceBanner}>
+              <FarmStayPrice />
+            </Layout>
+          }
+        />
+        <Route
+          path="/dang-ky-bao-gia-thiet-ke-khu-dich-vu"
+          exact
+          element={
+            <Layout backgroundImage={introduceBanner}>
+              <ServiceAreaPrice />
+            </Layout>
+          }
+        />
+        <Route
+          path="/bao-gia"
+          exact
+          element={
+            <Layout backgroundImage={introduceBanner}>
+              <Price />
             </Layout>
           }
         />
