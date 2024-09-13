@@ -1,6 +1,5 @@
 import React from "react";
 import { Image } from "react-bootstrap";
-import pdfFile from "../assets/TUTULELA HOUSE PLANTS DECOR + PROFILE 2023  (1).pdf";
 
 const Introduce = () => {
   return (
@@ -60,7 +59,12 @@ const Introduce = () => {
             </div>
           </h1>
           <button
-            onClick={() => window.open(pdfFile, "_blank")}
+            onClick={() =>
+              window.open(
+                "/assets/TUTULELA HOUSE PLANTS DECOR + PROFILE 2023  (1).pdf",
+                "_blank"
+              )
+            }
             className="ml-auto lg:mr-48 py-4 inline-block px-9 text-white text-xs uppercase font-bold border border-[#1a1a1a] bg-[#1a1a1a] bg-gradient-to-r from-[#1a1a1a] to-[#1a1a1a] bg-[length:100%_100%] hover:bg-[length:0%_100%] transition-all duration-700 hover:text-black hover:bg-white"
           >
             XEM PORFOLIO
