@@ -471,28 +471,35 @@ const FlowerBlog = () => {
               </Link>
             </div>
           </div>
-          <div className=" border border-[#f4f4f4] w-[350px] md:mt-24 mt-10">
+          <div className=" border border-[#f4f4f4] w-[350px] md:mt-24 mt-10 block">
             <div className="bg-[#f4f4f4] p-6 text-2xl font-semibold">
               DỊCH VỤ
             </div>
             <div className="">
-              <div className="p-4 hover:bg-black hover:text-white cursor-pointer duration-300">
-                THIẾT KẾ KIẾN TRÚC
+              <div className="p-4 w-[350px] hover:bg-black hover:text-white  duration-300">
+                <Link className="cursor-pointer" to="/thiet-ke-kien-truc">
+                  THIẾT KẾ KIẾN TRÚC
+                </Link>
+              </div>
+              <div className="p-4 hover:bg-black hover:text-white duration-300">
+                <Link className="cursor-pointer" to="/thiet-ke-nha-vuon">
+                  THIẾT KẾ NHÀ VƯỜN
+                </Link>
               </div>
               <div className="p-4 hover:bg-black hover:text-white cursor-pointer duration-300">
-                THIẾT KẾ NHÀ VƯỜN
+                <Link className="cursor-pointer" to="/thiet-ke-canh-quan">
+                  THIẾT KẾ & THI CÔNG CẢNH QUAN
+                </Link>
               </div>
               <div className="p-4 hover:bg-black hover:text-white cursor-pointer duration-300">
-                THIẾT KẾ & THI CÔNG CẢNH QUAN
+                <Link className="cursor-pointer" to="/thiet-ke-san-vuon">
+                  THIẾT KẾ & THI CÔNG SÂN VƯỜN
+                </Link>
               </div>
               <div className="p-4 hover:bg-black hover:text-white cursor-pointer duration-300">
-                THIẾT KẾ & THI CÔNG SÂN VƯỜN
-              </div>
-              <div className="p-4 hover:bg-black hover:text-white cursor-pointer duration-300">
-                THIẾT KẾ & THI CÔNG HỒ CÁ KOI
-              </div>
-              <div className="p-4 hover:bg-black hover:text-white cursor-pointer duration-300">
-                THIẾT KẾ & THI CÔNG TƯỜNG CÂY
+                <Link to="/thiet-ke-ho-ca-koi">
+                  THIẾT KẾ & THI CÔNG HỒ CÁ KOI
+                </Link>
               </div>
             </div>
           </div>

@@ -106,6 +106,7 @@ const Header = ({ onMenuToggle }) => {
           className="block text-gray-900 px-8 py-2 tracking-wider text-base mt-2"
           to="/dang-ky-bao-gia-thiet-ke-nha-vuon"
           onMouseEnter={() => setHoverItem("/bao-gia")}
+          onMouseLeave={() => setHoverItem(null)}
           style={{
             color: "#989898",
           }}
@@ -118,6 +119,7 @@ const Header = ({ onMenuToggle }) => {
           className="block text-gray-900 px-8 py-2 tracking-wider text-base"
           to="/dang-ky-bao-gia-thiet-ke-san-vuon"
           onMouseEnter={() => setHoverItem("/bao-gia")}
+          onMouseLeave={() => setHoverItem(null)}
           style={{
             color: "#989898",
           }}
@@ -130,6 +132,7 @@ const Header = ({ onMenuToggle }) => {
           className="block text-gray-900 px-8 py-2 tracking-wider text-base"
           to="/dang-ky-bao-gia-thiet-ke-farmstay"
           onMouseEnter={() => setHoverItem("/bao-gia")}
+          onMouseLeave={() => setHoverItem(null)}
           style={{
             color: "#989898",
           }}
@@ -142,6 +145,7 @@ const Header = ({ onMenuToggle }) => {
           className="block text-gray-900 px-8 py-2 tracking-wider text-base mb-2"
           to="/dang-ky-bao-gia-thiet-ke-khu-dich-vu"
           onMouseEnter={() => setHoverItem("/bao-gia")}
+          onMouseLeave={() => setHoverItem(null)}
           style={{
             color: "#989898",
           }}
@@ -163,7 +167,7 @@ const Header = ({ onMenuToggle }) => {
       <Menu.Item key="1">
         <Link
           className="block text-gray-900 px-8 py-2 tracking-wider text-base mt-2"
-          to="/garden-house"
+          to="/thiet-ke-kien-truc"
           style={{
             color: "#989898",
           }}
@@ -174,7 +178,7 @@ const Header = ({ onMenuToggle }) => {
       <Menu.Item key="2">
         <Link
           className="block text-gray-900 px-8 py-2 tracking-wider text-base"
-          to="/garden-design"
+          to="/thiet-ke-canh-quan"
           style={{
             color: "#989898",
           }}
@@ -185,7 +189,7 @@ const Header = ({ onMenuToggle }) => {
       <Menu.Item key="3">
         <Link
           className="block text-gray-900 px-8 py-2 tracking-wider text-base"
-          to="/farmstay"
+          to="/thiet-ke-nha-vuon"
           style={{
             color: "#989898",
           }}
@@ -196,7 +200,7 @@ const Header = ({ onMenuToggle }) => {
       <Menu.Item key="4">
         <Link
           className="block text-gray-900 px-8 py-2 tracking-wider text-base mb-2"
-          to="/service-area"
+          to="/thiet-ke-san-vuon"
           style={{
             color: "#989898",
           }}
@@ -207,7 +211,7 @@ const Header = ({ onMenuToggle }) => {
       <Menu.Item key="5">
         <Link
           className="block text-gray-900 px-8 py-2 tracking-wider text-base mb-2"
-          to="/service-area"
+          to="/thiet-ke-ho-ca-koi"
           style={{
             color: "#989898",
           }}
@@ -219,7 +223,7 @@ const Header = ({ onMenuToggle }) => {
   );
 
   return (
-    <header
+    <div
       className={`bg-transparent shadow-md transition-colors duration-300 lg:border-b-[1px] border-gray-500 lg:fixed w-full z-50`}
     >
       <div className="max-w-7xl lg:py-4 px-4 py-4 lg:pl-0">
@@ -236,7 +240,7 @@ const Header = ({ onMenuToggle }) => {
               <div className="text-xl">TUTULELA</div> HOUSE PLANTS <br /> DECOR
             </h1>
           </div>
-          <div className="hidden md:flex flex-1 justify-center text-white md:ml-24 mb-2">
+          <div className="hidden lg:flex flex-1 justify-center text-white lg:ml-10 mb-2">
             <nav className="space-x-4 relative text-white">
               <Link
                 to="/"
@@ -269,7 +273,7 @@ const Header = ({ onMenuToggle }) => {
                 />
               </Link>
               <Link
-                to="/service"
+                to="/du-an"
                 className="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-md font-normal"
                 style={arrowStyle(
                   activeItem === "/service" || hoverItem === "/service"
@@ -291,7 +295,7 @@ const Header = ({ onMenuToggle }) => {
                 placement="bottomLeft"
               >
                 <Link
-                  to="/newW"
+                  to="/dich-vu"
                   className="text-white px-3 py-2 rounded-md text-md font-normal"
                   onMouseEnter={() => setHoverItem("/newW")}
                   onMouseLeave={() => setHoverItem(null)}
@@ -359,7 +363,7 @@ const Header = ({ onMenuToggle }) => {
               </Link>
             </nav>
           </div>
-          <div className="md:hidden z-50">
+          <div className="lg:hidden z-50">
             <button
               // onClick={() => setIsOpen(!isOpen)}
               onClick={toggleMenu}
@@ -429,7 +433,7 @@ const Header = ({ onMenuToggle }) => {
               <div className="text-white border-[#3a3a3a] pb-3 border-b-[2px] px-3 py-2 rounded-md text-sm font-medium flex items-center">
                 <Link
                   onClick={toggleMenu}
-                  to="/your-link" // Thay "/your-link" bằng URL bạn muốn điều hướng đến
+                  to="/dich-vu" // Thay "/your-link" bằng URL bạn muốn điều hướng đến
                   className="flex-grow"
                 >
                   DỊCH VỤ
@@ -452,35 +456,35 @@ const Header = ({ onMenuToggle }) => {
                 <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 mt-2">
                   <Link
                     onClick={toggleMenu}
-                    to="/service1"
+                    to="/thiet-ke-kien-truc"
                     className="text-white border-[#3a3a3a] border-b-[2px] block px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Thiết Kế Và Thi Công Kiến Trúc
                   </Link>
                   <Link
                     onClick={toggleMenu}
-                    to="/service2"
+                    to="/thiet-ke-canh-quan"
                     className="text-white border-[#3a3a3a] border-b-[2px] block px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Thiết Kế Và Thi Công Cảnh Quan
                   </Link>
                   <Link
                     onClick={toggleMenu}
-                    to="/service3"
+                    to="/thiet-ke-nha-vuon"
                     className="text-white border-[#3a3a3a] border-b-[2px] block px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Thiết Kế Và Thi Công Nhà Vườn
                   </Link>
                   <Link
                     onClick={toggleMenu}
-                    to="/service3"
+                    to="/thiet-ke-san-vuon"
                     className="text-white border-[#3a3a3a] border-b-[2px] block px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Thiết Kế Và Thi Công Sân Vườn
                   </Link>
                   <Link
                     onClick={toggleMenu}
-                    to="/service3"
+                    to="/thiet-ke-ho-ca-koi"
                     className="text-white border-[#3a3a3a] border-b-[2px] block px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Thiết Kế Và Thi Công Hồ Cá Koi
@@ -555,7 +559,7 @@ const Header = ({ onMenuToggle }) => {
           </div>
         </div>
       )}
-    </header>
+    </div>
   );
 };
 

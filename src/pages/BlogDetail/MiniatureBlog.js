@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { Image } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import {
   FacebookShareButton,
   FacebookIcon,
@@ -394,7 +395,10 @@ const MiniatureBlog = () => {
               BÀI VIẾT MỚI
             </div>
             <div className="pl-4 space-y-2 mt-4">
-              <div className="flex space-x-4 text-[#82858a]">
+              <Link
+                to="/huong-dan-trong-va-cham-soc-hoa-hong-trong-chau"
+                className="flex space-x-4 text-[#82858a]"
+              >
                 <Image
                   className="w-10 h-10 rounded mt-1"
                   src={require("../../assets/vuon-hoa-hong.jpg")}
@@ -402,10 +406,13 @@ const MiniatureBlog = () => {
                 <h1>
                   Hướng dẫn trồng và chăm sóc hoa hồng trong chậu đúng kỹ thuật
                 </h1>
-              </div>
+              </Link>
             </div>
             <div className="pl-4 space-y-2 mt-4">
-              <div className="flex space-x-4 text-[#82858a]">
+              <Link
+                to="/thiet-ke-biet-thu-nha-vuon"
+                className="flex space-x-4 text-[#82858a]"
+              >
                 <Image
                   className="w-10 h-10 rounded mt-1"
                   src={require("../../assets/mau-thiet-ke-biet-thu-hien-dai-kieu-nghi-duong-405x228.jpg")}
@@ -413,28 +420,37 @@ const MiniatureBlog = () => {
                 <h1>
                   TOP 10 mẫu thiết kế biệt thự nghỉ dưỡng lộng lẫy, xa hoa
                 </h1>
-              </div>
+              </Link>
             </div>
             <div className="pl-4 space-y-2 mt-4">
-              <div className="flex space-x-4 text-[#82858a]">
+              <Link
+                to="/den-san-vuon-dep"
+                className="flex space-x-4 text-[#82858a]"
+              >
                 <Image
                   className="w-10 h-10 rounded mt-1"
                   src={require("../../assets/den-san-vuon-dep-avt-405x228.jpg")}
                 />
                 <h1>Top mẫu đèn sân vườn đẹp, được ưa chuộng nhất 2024</h1>
-              </div>
+              </Link>
             </div>
             <div className="pl-4 space-y-2 mt-4">
-              <div className="flex space-x-4 text-[#82858a]">
+              <Link
+                to="/top-nhung-quan-cafe-san-vuon-dep-o-sai-gon"
+                className="flex space-x-4 text-[#82858a]"
+              >
                 <Image
                   className="w-10 h-10 rounded mt-1"
                   src={require("../../assets/ca-phe-dep-nhat-405x228.jpg")}
                 />
                 <h1>Khám phá top những quán cafe sân vườn đẹp tại Sài Gòn</h1>
-              </div>
+              </Link>
             </div>
             <div className="pl-4 space-y-2 mt-4">
-              <div className="flex space-x-4 text-[#82858a]">
+              <Link
+                to="/thiet-ke-biet-thu-nha-vuon"
+                className="flex space-x-4 text-[#82858a]"
+              >
                 <Image
                   className="w-10 h-10 rounded mt-1"
                   src={require("../../assets/thiet-ke-biet-thu-nha-vuon-avt-405x228.jpg")}
@@ -442,31 +458,38 @@ const MiniatureBlog = () => {
                 <h1>
                   Mẫu thiết kế biệt thự nhà vườn sang trọng & lưu ý cần biết
                 </h1>
-              </div>
+              </Link>
             </div>
           </div>
-          <div className=" border border-[#f4f4f4] w-[350px] md:mt-24 mt-10">
+          <div className=" border border-[#f4f4f4] w-[350px] md:mt-24 mt-10 block">
             <div className="bg-[#f4f4f4] p-6 text-2xl font-semibold">
               DỊCH VỤ
             </div>
             <div className="">
-              <div className="p-4 hover:bg-black hover:text-white cursor-pointer duration-300">
-                THIẾT KẾ KIẾN TRÚC
+              <div className="p-4 w-[350px] hover:bg-black hover:text-white  duration-300">
+                <Link className="cursor-pointer" to="/thiet-ke-kien-truc">
+                  THIẾT KẾ KIẾN TRÚC
+                </Link>
+              </div>
+              <div className="p-4 hover:bg-black hover:text-white duration-300">
+                <Link className="cursor-pointer" to="/thiet-ke-nha-vuon">
+                  THIẾT KẾ NHÀ VƯỜN
+                </Link>
               </div>
               <div className="p-4 hover:bg-black hover:text-white cursor-pointer duration-300">
-                THIẾT KẾ NHÀ VƯỜN
+                <Link className="cursor-pointer" to="/thiet-ke-canh-quan">
+                  THIẾT KẾ & THI CÔNG CẢNH QUAN
+                </Link>
               </div>
               <div className="p-4 hover:bg-black hover:text-white cursor-pointer duration-300">
-                THIẾT KẾ & THI CÔNG CẢNH QUAN
+                <Link className="cursor-pointer" to="/thiet-ke-san-vuon">
+                  THIẾT KẾ & THI CÔNG SÂN VƯỜN
+                </Link>
               </div>
               <div className="p-4 hover:bg-black hover:text-white cursor-pointer duration-300">
-                THIẾT KẾ & THI CÔNG SÂN VƯỜN
-              </div>
-              <div className="p-4 hover:bg-black hover:text-white cursor-pointer duration-300">
-                THIẾT KẾ & THI CÔNG HỒ CÁ KOI
-              </div>
-              <div className="p-4 hover:bg-black hover:text-white cursor-pointer duration-300">
-                THIẾT KẾ & THI CÔNG TƯỜNG CÂY
+                <Link to="/thiet-ke-ho-ca-koi">
+                  THIẾT KẾ & THI CÔNG HỒ CÁ KOI
+                </Link>
               </div>
             </div>
           </div>

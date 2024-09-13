@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { Image } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Price = () => {
   const section1Ref = useRef(null);
@@ -97,28 +98,35 @@ const Price = () => {
               </div>
             </div>
           </div>
-          <div className=" border border-[#f4f4f4] w-[350px] md:mt-24 mt-10">
+          <div className=" border border-[#f4f4f4] w-[350px] md:mt-24 mt-10 block">
             <div className="bg-[#f4f4f4] p-6 text-2xl font-semibold">
               DỊCH VỤ
             </div>
             <div className="">
-              <div className="p-4 hover:bg-black hover:text-white cursor-pointer duration-300">
-                THIẾT KẾ KIẾN TRÚC
+              <div className="p-4 w-[350px] hover:bg-black hover:text-white  duration-300">
+                <Link className="cursor-pointer" to="/thiet-ke-kien-truc">
+                  THIẾT KẾ KIẾN TRÚC
+                </Link>
+              </div>
+              <div className="p-4 hover:bg-black hover:text-white duration-300">
+                <Link className="cursor-pointer" to="/thiet-ke-nha-vuon">
+                  THIẾT KẾ NHÀ VƯỜN
+                </Link>
               </div>
               <div className="p-4 hover:bg-black hover:text-white cursor-pointer duration-300">
-                THIẾT KẾ NHÀ VƯỜN
+                <Link className="cursor-pointer" to="/thiet-ke-canh-quan">
+                  THIẾT KẾ & THI CÔNG CẢNH QUAN
+                </Link>
               </div>
               <div className="p-4 hover:bg-black hover:text-white cursor-pointer duration-300">
-                THIẾT KẾ & THI CÔNG CẢNH QUAN
+                <Link className="cursor-pointer" to="/thiet-ke-san-vuon">
+                  THIẾT KẾ & THI CÔNG SÂN VƯỜN
+                </Link>
               </div>
               <div className="p-4 hover:bg-black hover:text-white cursor-pointer duration-300">
-                THIẾT KẾ & THI CÔNG SÂN VƯỜN
-              </div>
-              <div className="p-4 hover:bg-black hover:text-white cursor-pointer duration-300">
-                THIẾT KẾ & THI CÔNG HỒ CÁ KOI
-              </div>
-              <div className="p-4 hover:bg-black hover:text-white cursor-pointer duration-300">
-                THIẾT KẾ & THI CÔNG TƯỜNG CÂY
+                <Link to="/thiet-ke-ho-ca-koi">
+                  THIẾT KẾ & THI CÔNG HỒ CÁ KOI
+                </Link>
               </div>
             </div>
           </div>
@@ -281,14 +289,17 @@ const Price = () => {
             thiết kế và ngày lễ tết)
           </h1>
           <div className="mt-4 mx-4">
-            <div className="bg-[#68727d] p-2 border-2 border-[#7f7f7f] shadow-2xl text-white rounded flex text-center justify-center">
+            <Link
+              to="/thiet-ke-canh-quan"
+              className="bg-[#68727d] p-2 border-2 border-[#7f7f7f] shadow-2xl text-white rounded flex text-center justify-center"
+            >
               <Image
                 className="w-4 h-4 mt-2 mr-2"
                 src={require("../assets/icon/expand.png")}
               />
               Mời xem mẫu và nhận báo giá thiết kế cảnh quan chi tiết miễn phí
               (click tại đây)
-            </div>
+            </Link>
           </div>
           <h1 ref={section3Ref} className="mt-4 text-3xl font-semibold">
             Báo giá thiết kế kiến trúc biệt thự vườn
@@ -431,14 +442,17 @@ const Price = () => {
             được bốc tách từ bản vẽ thiết kế thi công hoàn thiện.
           </h1>
           <div className="mt-4 mx-4">
-            <div className="bg-[#68727d] p-2 border-2 border-[#7f7f7f] shadow-2xl text-white rounded flex text-center justify-center">
+            <Link
+              to="/thiet-ke-san-vuon"
+              className="bg-[#68727d] p-2 border-2 border-[#7f7f7f] shadow-2xl text-white rounded flex text-center justify-center"
+            >
               <Image
                 className="w-4 h-4 mt-2 mr-2"
                 src={require("../assets/icon/expand.png")}
               />
               Mời xem mẫu và nhận báo giá chi tiết thiết kế thi công sân vườn
               miễn phí (click tại đây)
-            </div>
+            </Link>
           </div>
           <h1 ref={section6Ref} className="mt-4 text-3xl font-semibold">
             Bảng báo giá thi công hồ cá koi
@@ -510,14 +524,17 @@ const Price = () => {
             <li>Thi công cây tầm trung</li>
           </div>
           <div className="mt-4 mx-4">
-            <div className="bg-[#68727d] p-2 border-2 border-[#7f7f7f] shadow-2xl text-white rounded flex text-center justify-center">
+            <Link
+              to="/thiet-ke-ho-ca-koi"
+              className="bg-[#68727d] p-2 border-2 border-[#7f7f7f] shadow-2xl text-white rounded flex text-center justify-center"
+            >
               <Image
                 className="w-4 h-4 mt-2 mr-2"
                 src={require("../assets/icon/expand.png")}
               />
               Mời xem mẫu hồ cá koi đẹp v à nhận báo giá chi tiết miễn phí
               (click tại đây)
-            </div>
+            </Link>
           </div>
           <h1 ref={section7Ref} className="mt-4 text-3xl font-semibold">
             Báo giá thi công vườn đứng

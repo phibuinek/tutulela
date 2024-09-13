@@ -76,9 +76,12 @@ const Home = ({ isMenuOpen }) => {
         <div className="text-4xl text-black font-bold mt-2">
           Dịch vụ chúng tôi cung cấp
         </div>
-        <div className="mt-6 grid grid-cols-[repeat(auto-fill,_minmax(300px,_1fr))] mb-4 mx-auto">
-          <div className="col-span-1 w-[300px]">
-            <Link className="flex space-x-4 border-2 border-[#7a7a7a] p-1 h-[90px] w-[300px] mx-auto">
+        <div className="mt-6 grid grid-cols-[repeat(auto-fill,_minmax(300px,_1fr))] mb-4 mx-auto space-y-2">
+          <div className="col-span-1 w-[300px] mt-2">
+            <Link
+              to="/thiet-ke-canh-quan"
+              className="flex space-x-4 border-2 border-[#7a7a7a] p-1 h-[90px] w-[300px]"
+            >
               <div className="bg-[#7a7a7a] text-white font-bold text-5xl pt-3 pb-2 my-1 px-4">
                 1
               </div>
@@ -88,7 +91,10 @@ const Home = ({ isMenuOpen }) => {
             </Link>
           </div>
           <div className="col-span-1 w-[300px]">
-            <Link className="flex space-x-4 border-2 border-[#7a7a7a] p-1 h-[90px] w-[300px] mx-auto">
+            <Link
+              to="/thiet-ke-nha-vuon"
+              className="flex space-x-4 border-2 border-[#7a7a7a] p-1 h-[90px] w-[300px]"
+            >
               <div className="bg-[#7a7a7a] text-white font-bold text-5xl pt-3 pb-2 my-1 px-4">
                 2
               </div>
@@ -98,7 +104,10 @@ const Home = ({ isMenuOpen }) => {
             </Link>
           </div>
           <div className="col-span-1">
-            <Link className="flex space-x-4 border-2 border-[#7a7a7a] p-1 h-[90px] w-[300px] mx-auto">
+            <Link
+              to="/thiet-ke-san-vuon"
+              className="flex space-x-4 border-2 border-[#7a7a7a] p-1 h-[90px] w-[300px]"
+            >
               <div className="bg-[#7a7a7a] text-white font-bold text-5xl pt-3 pb-2 my-1 px-4">
                 3
               </div>
@@ -108,7 +117,10 @@ const Home = ({ isMenuOpen }) => {
             </Link>
           </div>
           <div className="col-span-1">
-            <Link className="flex space-x-4 border-2 border-[#7a7a7a] p-1 h-[90px] w-[300px] mx-auto">
+            <Link
+              to="/thiet-ke-ho-ca-koi"
+              className="flex space-x-4 border-2 border-[#7a7a7a] p-1 h-[90px] w-[300px]"
+            >
               <div className="bg-[#7a7a7a] text-white font-bold text-5xl pt-3 pb-2 my-1 px-4">
                 4
               </div>
@@ -129,105 +141,37 @@ const Home = ({ isMenuOpen }) => {
               Dự án nổi bật
             </div>
           </div>
-          <button className="ml-auto lg:mr-48 inline-block px-9 text-white text-xs uppercase font-bold border border-[#1a1a1a] bg-[#1a1a1a] bg-gradient-to-r from-[#1a1a1a] to-[#1a1a1a] bg-[length:100%_100%] hover:bg-[length:0%_100%] transition-all duration-300 hover:text-black hover:bg-white">
+          <Link
+            to="/du-an"
+            className="ml-auto lg:mr-48 inline-block px-9 pt-6 text-sm text-white uppercase font-bold border border-[#1a1a1a] bg-[#1a1a1a] bg-gradient-to-r from-[#1a1a1a] to-[#1a1a1a] bg-[length:100%_100%] hover:bg-[length:0%_100%] transition-all duration-300 hover:text-black hover:bg-white"
+          >
             XEM TẤT CẢ
-          </button>
-        </div>
-        <div className="lg:flex lg:ml-0 ml-4 lg:w-full lg:h-[380px] mt-4 lg:mt-10">
-          <Link className={`group w-1/4 ${isMenuOpen ? "" : "relative"}`}>
-            <Image
-              className="w-full h-[380px] transition-transform duration-500 ease-in-out sm:group-hover:scale-100 lg:group-hover:scale-110"
-              src={require("../assets/vien-le-jardin-720x720.jpg")}
-            />
-            <div className="absolute bottom-0 left-0 lg:bottom-[-18px] lg:left-[-22px] text-white border-2 border-black bg-black w-[300px] h-[150px] text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
-              <div className="mt-4 ml-10 hover:underline">VIEN LE JARDIN</div>
-              <div className="text-[#e5e5e5] mt-2 ml-10 hover:text-white text-lg">
-                ( DESIGN )
-              </div>
-            </div>
-          </Link>
-          <Link className={`group w-1/4 ${isMenuOpen ? "" : "relative"}`}>
-            <Image
-              className="w-full h-[380px] transition-transform duration-500 ease-in-out sm:group-hover:scale-100 lg:group-hover:scale-110"
-              src={require("../assets/onsen-go-vap-720x720.jpg")}
-            />
-            <div className="absolute bottom-0 left-0 lg:bottom-[-18px] lg:left-[-22px] text-white border-2 border-black bg-black w-[300px] h-[150px] text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
-              <div className="mt-4 ml-10 hover:underline">ONSEN GÒ VẤP</div>
-              <div className="text-[#e5e5e5] mt-2 ml-10 hover:text-white text-lg">
-                ( DESIGN )
-              </div>
-            </div>
-          </Link>
-          <Link className={`group w-1/4 ${isMenuOpen ? "" : "relative"}`}>
-            <Image
-              className="w-full h-[380px] transition-transform duration-500 ease-in-out sm:group-hover:scale-100 lg:group-hover:scale-110"
-              src={require("../assets/farmstay-daknong-720x720.jpg")}
-            />
-            <div className="absolute bottom-0 left-0 lg:bottom-[-18px] lg:left-[-22px] text-white border-2 border-black bg-black w-[300px] h-[150px] text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
-              <div className="mt-4 ml-10 hover:underline">DAKNONG FARMSTAY</div>
-              <div className="text-[#e5e5e5] mt-2 ml-10 hover:text-white text-lg">
-                ( DESIGN )
-              </div>
-            </div>
-          </Link>
-          <Link className={`group w-1/4 ${isMenuOpen ? "" : "relative"}`}>
-            <Image
-              className="w-full h-[380px] transition-transform duration-500 ease-in-out sm:group-hover:scale-100 lg:group-hover:scale-110"
-              src={require("../assets/nha-mau-khu-10-lang-thong-dong.jpg")}
-            />
-            <div className="absolute bottom-0 left-0 lg:bottom-[-18px] lg:left-[-22px] text-white border-2 border-black bg-black w-[300px] h-[150px] text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
-              <div className="mt-4 ml-10 hover:underline">
-                NHÀ MẪU LÀNG THONG DONG
-              </div>
-              <div className="text-[#e5e5e5] mt-2 ml-10 hover:text-white text-lg">
-                ( DESIGN & BUILD)
-              </div>
-            </div>
           </Link>
         </div>
-        <div className="lg:flex lg:ml-0 ml-4 lg:w-full lg:h-[380px] ">
-          <Link className={`group w-1/4 ${isMenuOpen ? "" : "relative"}`}>
+        <div className="grid grid-cols-[repeat(auto-fill,_minmax(400px,_1fr))] lg:ml-0 ml-4 lg:w-full lg:h-[380px] mt-4 lg:mt-10 gap-0">
+          <Link to="/du-an1" className="group block">
             <Image
-              className="w-full h-[380px] transition-transform duration-500 ease-in-out sm:group-hover:scale-100 lg:group-hover:scale-110"
-              src={require("../assets/penthouse-opal-tower-feature-img.jpg")}
+              className="h-[380px] w-full object-cover transition-transform duration-500 ease-in-out "
+              src={require("../assets/project/6/z5820560135029_f49fce3286bb59c5430602ac30adff1e.jpg")}
             />
-            <div className="absolute bottom-0 left-0 lg:bottom-[-18px] lg:left-[-22px] text-white border-2 border-black bg-black w-[300px] h-[150px] text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
-              <div className="mt-4 ml-10 hover:underline">
-                PENTHOUSE OPAL TOWER
-              </div>
-              <div className="text-[#e5e5e5] mt-2 ml-10 hover:text-white text-lg">
-                ( DESIGN )
-              </div>
-            </div>
           </Link>
-          <Link className={`group w-1/4 ${isMenuOpen ? "" : "relative"}`}>
+          <Link to="/du-an2" className="group block">
             <Image
-              className="w-full h-[380px] transition-transform duration-500 ease-in-out sm:group-hover:scale-100 lg:group-hover:scale-110"
-              src={require("../assets/para-720x720.jpg")}
+              className="h-[380px] w-full object-cover transition-transform duration-500 ease-in-out"
+              src={require("../assets/project/2/z5820560628076_dde6a16155285892e18685ecde5e215f.jpg")}
             />
-            <div className="absolute bottom-0 left-0 lg:bottom-[-18px] lg:left-[-22px] text-white border-2 border-black bg-black w-[400px] h-[150px] text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
-              <div className="mt-4 ml-10 hover:underline">
-                Vườn Tự Tại – Thiết kế khu tổ hợp chuyên đề Thiền tại Tp.Hồ Chí
-                Minh
-              </div>
-              <div className="text-[#e5e5e5] mt-2 ml-10 hover:text-white text-lg">
-                ( ARCHITECTURE ) ( DESIGN )
-              </div>
-            </div>
           </Link>
-          <Link className={`group w-2/4 ${isMenuOpen ? "" : "relative"}`}>
+          <Link to="/du-an3" className="group block">
             <Image
-              className="w-full h-[380px] transition-transform duration-500 ease-in-out sm:group-hover:scale-100 lg:group-hover:scale-110"
-              src={require("../assets/project1-2.jpg")}
+              className="h-[380px] w-full object-cover transition-transform duration-500 ease-in-out "
+              src={require("../assets/project/3/z5820561064718_3d87d38670124db5778317e9a3c98176.jpg")}
             />
-            <div className="absolute bottom-0 left-0 lg:bottom-[-18px] lg:left-[-44px] text-white border-2 border-black bg-black w-[300px] lg:w-[500px] h-[150px] text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
-              <div className="mt-4 ml-10 hover:underline">
-                The Retreat Garden – Vườn Nhật Bản
-              </div>
-              <div className="text-[#e5e5e5] mt-2 ml-10 hover:text-white text-lg">
-                ( DESIGN & BUILD )
-              </div>
-            </div>
+          </Link>
+          <Link to="/du-an4" className="group block">
+            <Image
+              className="h-[380px] w-full object-cover transition-transform duration-500 ease-in-out"
+              src={require("../assets/project/4/c.jpg")}
+            />
           </Link>
         </div>
       </div>
