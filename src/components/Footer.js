@@ -2,6 +2,7 @@ import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Image } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -57,32 +58,41 @@ const Footer = () => {
           <h1 className="text-2xl mt-10 font-bold">Dịch Vụ</h1>
           <div className="border-[1px] mt-1 w-12 border-[#dbad4d]"></div>
           <div className="mt-10">
-            <div className="flex hover:text-[#dbad4d] cursor-pointer">
+            <Link
+              to="/thiet-ke-kien-truc"
+              className="flex hover:text-[#dbad4d] cursor-pointer"
+            >
               <FontAwesomeIcon icon={faCaretRight} className="mt-1" />
               <h1 className="ml-2">Thiết kế & thi công kiến trúc</h1>
-            </div>
-            <div className="flex hover:text-[#dbad4d] cursor-pointer mt-4">
+            </Link>
+            <Link
+              to="/thiet-ke-nha-vuon"
+              className="flex hover:text-[#dbad4d] cursor-pointer mt-4"
+            >
               <FontAwesomeIcon icon={faCaretRight} className="mt-1" />
               <h1 className="ml-2">Thiết kế biệt thự nhà vườn</h1>
-            </div>
-            <div className="flex hover:text-[#dbad4d] cursor-pointer mt-4">
+            </Link>
+            <Link
+              to="/thiet-ke-canh-quan"
+              className="flex hover:text-[#dbad4d] cursor-pointer mt-4"
+            >
               <FontAwesomeIcon icon={faCaretRight} className="mt-1" />
               <h1 className="ml-2">Thiết kế & thi công cảnh quan</h1>
-            </div>
-            <div className="flex hover:text-[#dbad4d] cursor-pointer mt-4">
+            </Link>
+            <Link
+              to="/thiet-ke-san-vuon"
+              className="flex hover:text-[#dbad4d] cursor-pointer mt-4"
+            >
               <FontAwesomeIcon icon={faCaretRight} className="mt-1" />
               <h1 className="ml-2">Thiết kế & thi công sân vườn biệt thự</h1>
-            </div>
-            <div className="flex hover:text-[#dbad4d] cursor-pointer mt-4">
+            </Link>
+            <Link
+              to="/thiet-ke-ho-ca-koi"
+              className="flex hover:text-[#dbad4d] cursor-pointer mt-4"
+            >
               <FontAwesomeIcon icon={faCaretRight} className="mt-1" />
               <h1 className="ml-2">Thiết kế & thi công hồ cá KOI</h1>
-            </div>
-            <div className="flex hover:text-[#dbad4d] cursor-pointer mt-4">
-              <FontAwesomeIcon icon={faCaretRight} className="mt-1" />
-              <h1 className="ml-2">
-                Thiết kế & thi công vườn tường đứng cây xanh
-              </h1>
-            </div>
+            </Link>
           </div>
         </div>
         <div>
