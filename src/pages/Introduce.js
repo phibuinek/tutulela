@@ -4,14 +4,14 @@ import { Image } from "react-bootstrap";
 const Introduce = () => {
   return (
     <div>
-      <div className="grid grid-cols-[repeat(auto-fill,_minmax(600px,_1fr))] lg:px-10 mt-10">
-        <div className="lg:col-span-1 lg:pl-24 pl-0">
+      <div className="grid grid-cols-[repeat(auto-fill,_minmax(700px,_1fr))] lg:px-10 mt-10">
+        <div className="col-span-1 lg:pl-24 pl-0">
           <Image
             className="max-w-[678px] max-h-[900px] lg:mt-16 lg:pl-24"
             src={require("../assets/background-about-us-e1700469663462.jpg")}
           />
         </div>
-        <div className="lg:col-span-1">
+        <div className="col-span-1">
           <h1 className="text-4xl font-bold mt-24">About Us</h1>
           <h1 className="text-lg mt-10 md:max-w-[600px] w-[400px] lg:w-full">
             <div className="mb-4">
@@ -61,7 +61,7 @@ const Introduce = () => {
           <button
             onClick={() =>
               window.open(
-                "/assets/TUTULELA HOUSE PLANTS DECOR + PROFILE 2023  (1).pdf",
+                "https://drive.google.com/file/d/1Wc2cvV1RrKHzsLDd_AUR5srzCdnMBT5d/view?usp=drive_link",
                 "_blank"
               )
             }
