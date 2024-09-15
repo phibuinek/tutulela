@@ -163,11 +163,11 @@ const Layout = ({ children, backgroundImage }) => {
         }}
       >
         <div
-          className={`inset-0 md:fixed lg:z-40 z-100 transition-colors h-[96px] duration-300 ${
+          className={`inset-0 md:fixed lg:z-40 z-50 transition-colors h-[96px] duration-300 ${
             isHeaderBgBlack ? "bg-[#1a1a1a]" : "bg-transparent"
           }`}
         >
-          <Header className="z-100" onMenuToggle={setIsMenuOpen} />
+          <Header className="z-50" onMenuToggle={setIsMenuOpen} />
         </div>
 
         {location.pathname === "/" && (
