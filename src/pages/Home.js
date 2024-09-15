@@ -406,9 +406,9 @@ const Home = ({ isMenuOpen }) => {
           </Link>
         </div>
         <div className="lg:ml-24 ml-4 text-xl mt-6">
-          Cập nhật những thông tin mới nhất về hoạt động của SGL Vietnam và
-          những kinh nghiệm, kiến thức về lĩnh vực kiến trúc – cảnh quan – sân
-          vườn từ chuyên gia
+          Cập nhật những thông tin mới nhất về hoạt động của Tutulela và những
+          kinh nghiệm, kiến thức về lĩnh vực kiến trúc – cảnh quan – sân vườn từ
+          chuyên gia
         </div>
         <div className="grid grid-cols-[repeat(auto-fill,_minmax(400px,_1fr))] lg:pl-24 md:pl-12 pl-4">
           <Link

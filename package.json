@@ -36,6 +36,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "postbuild": "find build/static/js -name '*.js' -exec javascript-obfuscator {} --output {} --compact true --control-flow-flattening true --rotate-string-array true --string-array true --string-array-threshold 0.75 \\;",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -58,6 +59,7 @@
     ]
   },
   "devDependencies": {
+    "javascript-obfuscator": "^4.1.1",
     "tailwindcss": "^3.4.10"
   }
 }
