@@ -476,6 +476,31 @@ const Layout = ({ children, backgroundImage }) => {
 };
 
 const App = () => {
+  // Chặn chuột phải
+  document.addEventListener("contextmenu", (e) => e.preventDefault());
+
+  // Chặn phím F12 và các phím tắt khác
+  document.onkeydown = function (e) {
+    if (e.keyCode === 123) {
+      // F12
+      return false;
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
+      // Ctrl+Shift+I
+      return false;
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode === 74) {
+      // Ctrl+Shift+J
+      return false;
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode === 67) {
+      return false;
+    }
+    if (e.ctrlKey && e.keyCode === 85) {
+      // Ctrl+U
+      return false;
+    }
+  };
   const ScrollToTop = () => {
     const { pathname } = useLocation();
 

@@ -276,16 +276,16 @@ const Header = ({ onMenuToggle }) => {
                 to="/du-an"
                 className="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-md font-normal"
                 style={arrowStyle(
-                  activeItem === "/service" || hoverItem === "/service"
+                  activeItem === "/du-an" || hoverItem === "/du-an"
                 )}
-                onMouseEnter={() => setHoverItem("/service")}
+                onMouseEnter={() => setHoverItem("/du-an")}
                 onMouseLeave={() => setHoverItem(null)}
               >
                 <h1 className="text-white">DỰ ÁN</h1>
 
                 <span
                   style={arrowAfterStyle(
-                    activeItem === "/service" || hoverItem === "/service"
+                    activeItem === "/du-an" || hoverItem === "/du-an"
                   )}
                 />
               </Link>
@@ -425,7 +425,7 @@ const Header = ({ onMenuToggle }) => {
               </Link>
               <Link
                 onClick={toggleMenu}
-                to="/services"
+                to="/du-an"
                 className="text-white border-[#3a3a3a] pb-3 border-b-[2px] block px-3 py-2 rounded-md text-sm font-medium"
               >
                 DỰ ÁN
