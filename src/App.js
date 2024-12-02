@@ -40,7 +40,6 @@ import ArchitectureService from "./pages/Service/ArchitectureService";
 import LandscapeService from "./pages/Service/LandscapeService";
 import GardenVillaService from "./pages/Service/GardenVillaService";
 import GardenService from "./pages/Service/GardenService";
-import KoiPondService from "./pages/Service/KoiPondService";
 import Project1 from "./pages/Project/Project1";
 import project1Banner from "./assets/project/1/z5820562488003_1ff7274c729a4f2c1440c0acfb4ffc42.jpg";
 import Project2 from "./pages/Project/Project2";
@@ -76,13 +75,13 @@ const Layout = ({ children, backgroundImage }) => {
       h2: "Những không gian trở về, chữa lành luôn là điểm cuối cùng của mỗi sự lựa chọn, khi bạn đã vất vả ngần ấy thời gian. Bây giờ hãy để cho chúng tôi tạo cho bạn một không gian mà bạn mong đợi",
     },
     {
-      link: "/thiet-ke-canh-quan",
+      link: "//thiet-ke-can-ho",
       backgroundImage: homeBanner2,
       h1: "THIẾT KẾ KIẾN TRÚC CẢNH QUAN",
       h2: "Chúng tôi tự hào là những người thiết kế kiến trúc cảnh quan và xây dựng các giải pháp sáng tạo để giúp mọi người thực hiện tầm nhìn của họ và biến chúng thành hiện thực. Thú vị đấy chứ?",
     },
     {
-      link: "/thiet-ke-san-vuon",
+      link: "/thiet-ke-cong-trinh-cong-cong",
       backgroundImage: homeBanner3,
       h1: "DESIGN & BUILD",
       h2: "Chúng tôi tạo ra những khu vườn chỉnh chu từ thiết kế đeến thi công, các khu vườn triệu đô, theể hiện được vị thế và đẳng cấp của chủ đầu tư. Nhưng trên hết sự hiệu quả và kiến tạo nơi chốn luôn được đặt lên hàng đầu.",
@@ -342,62 +341,51 @@ const Layout = ({ children, backgroundImage }) => {
             </div>
           </div>
         )}
-        {location.pathname === "/thiet-ke-kien-truc" && (
+        {location.pathname === "/thiet-ke-cua-hang-an-uong" && (
           <div className="absolute inset-0 flex justify-start items-center">
             <div className="max-w-[1300px]">
               <h1 className={`text-white text-5xl font-bold pl-24 lg:pl-44`}>
-                Thiết Kế Kiến Trúc
+                Thiết Kế Cửa Hàng Ăn Uống
               </h1>
               <h1 className={`text-white mt-4 pl-24 lg:pl-44`}>
-                Trang chủ » Dịch Vụ » Thiết Kế Kiến Trúc
+                Trang chủ » Dịch Vụ » Thiết Kế Cửa Hàng Ăn Uống
               </h1>
             </div>
           </div>
         )}
-        {location.pathname === "/thiet-ke-canh-quan" && (
+        {location.pathname === "/thiet-ke-can-ho" && (
           <div className="absolute inset-0 flex justify-start items-center">
             <div className="max-w-[1300px]">
               <h1 className={`text-white text-5xl font-bold pl-24 lg:pl-44`}>
-                Thiết Kế Và Thi Công Cảnh Quan
+                Thiết Kế Và Thi Công CĂN HỘ - BIỆT THỰ - KHU NGHỈ DƯỠNG
               </h1>
               <h1 className={`text-white mt-4 pl-24 lg:pl-44`}>
-                Trang chủ » Dịch Vụ » Thiết Kế Và Thi Công Cảnh Quan
+                Trang chủ » Dịch Vụ » Thiết Kế Và Thi Công CĂN HỘ - BIỆT THỰ -
+                KHU NGHỈ DƯỠNG
               </h1>
             </div>
           </div>
         )}
-        {location.pathname === "/thiet-ke-nha-vuon" && (
+        {location.pathname === "/thiet-ke-cua-hang-kinh-doanh" && (
           <div className="absolute inset-0 flex justify-start items-center">
             <div className="max-w-[1300px]">
               <h1 className={`text-white text-5xl font-bold pl-24 lg:pl-44`}>
-                Thiết Kế Nhà Vườn
+                Thiết Kế Và Thi Công Cửa Hàng Kinh Doanh
               </h1>
               <h1 className={`text-white mt-4 pl-24 lg:pl-44`}>
-                Trang chủ » Dịch Vụ » Thiết Kế Nhà Vườn
+                Trang chủ » Dịch Vụ » Thiết Kế Và Thi Công Cửa Hàng Kinh Doanh
               </h1>
             </div>
           </div>
         )}
-        {location.pathname === "/thiet-ke-san-vuon" && (
+        {location.pathname === "/thiet-ke-cong-trinh-cong-cong" && (
           <div className="absolute inset-0 flex justify-start items-center">
             <div className="max-w-[1300px]">
               <h1 className={`text-white text-5xl font-bold pl-24 lg:pl-44`}>
-                Thiết Kế Và Thi Công Sân Vườn
+                Thiết Kế Và Thi Công Công Trình Công Cộng
               </h1>
               <h1 className={`text-white mt-4 pl-24 lg:pl-44`}>
-                Trang chủ » Dịch Vụ » Thiết Kế Và Thi Công Sân Vườn
-              </h1>
-            </div>
-          </div>
-        )}
-        {location.pathname === "/thiet-ke-ho-ca-koi" && (
-          <div className="absolute inset-0 flex justify-start items-center">
-            <div className="max-w-[1300px]">
-              <h1 className={`text-white text-5xl font-bold pl-24 lg:pl-44`}>
-                Thiết Kế Và Thi Công Hồ Cá Koi
-              </h1>
-              <h1 className={`text-white mt-4 pl-24 lg:pl-44`}>
-                Trang chủ » Dịch Vụ » Thiết Kế Và Thi Công Hồ Cá Koi
+                Trang chủ » Dịch Vụ » Thiết Kế Và Thi Công Công Trình Công Cộng
               </h1>
             </div>
           </div>
@@ -659,7 +647,7 @@ const App = () => {
           }
         />
         <Route
-          path="/thiet-ke-kien-truc"
+          path="/thiet-ke-cua-hang-an-uong"
           exact
           element={
             <Layout backgroundImage={introduceBanner}>
@@ -668,7 +656,7 @@ const App = () => {
           }
         />
         <Route
-          path="/thiet-ke-canh-quan"
+          path="/thiet-ke-can-ho"
           exact
           element={
             <Layout backgroundImage={introduceBanner}>
@@ -677,7 +665,7 @@ const App = () => {
           }
         />
         <Route
-          path="/thiet-ke-nha-vuon"
+          path="//thiet-ke-cua-hang-kinh-doanh"
           exact
           element={
             <Layout backgroundImage={introduceBanner}>
@@ -686,20 +674,11 @@ const App = () => {
           }
         />
         <Route
-          path="/thiet-ke-san-vuon"
+          path="/thiet-ke-cong-trinh-cong-cong"
           exact
           element={
             <Layout backgroundImage={introduceBanner}>
               <GardenService />
-            </Layout>
-          }
-        />
-        <Route
-          path="/thiet-ke-ho-ca-koi"
-          exact
-          element={
-            <Layout backgroundImage={introduceBanner}>
-              <KoiPondService />
             </Layout>
           }
         />
