@@ -32,7 +32,10 @@ const Home = ({ isMenuOpen }) => {
     <div>
       <div className="lg:grid lg:grid-cols-2 lg:px-24 px-10 lg:border-x-[1px] pb-24 border-b-0 lg:mx-20 lg:border-[#e5e5e5] ">
         <div className="lg:col-span-1 lg:mt-48 mt-24">
-          <Image src={require("../assets/lang-thong-dong-masterplan.jpg")} />
+          <Image
+            className="rounded-lg shadow-lg object-cover"
+            src={require("../assets/432772454_411168894856471_4534911275161644793_n.jpg")}
+          />
         </div>
         <div className="lg:col-span-1 lg:pt-36 pt-24 lg:pl-20 lg:ml-4 lg:border-[#e5e5e5] lg:border-l-[1px] text-justify">
           <div className="lg:grid lg:grid-cols-2">
