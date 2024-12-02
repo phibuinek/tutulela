@@ -39,7 +39,7 @@ const Introduce = () => {
               Với kinh nghiệm đã thiết kế và hoàn thiện cảnh quan cây xanh nội -
               ngoại thất cho nhiều dự án, chúng tôi hy vọng giúp được quý khách
               hàng một cách nhiệt tình, chuyên nghiệp và hiệu quả nhất, nhằm
-              mang đến không gian gẫn gũi với thiên nhiên, tạo ra không gian yên
+              mang đến không gian gần gũi với thiên nhiên, tạo ra không gian yên
               bình chân thật tại chính nơi khách hàng mong muốn.
             </div>
             <div className="mb-4">

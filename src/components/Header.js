@@ -70,7 +70,7 @@ const Header = ({ onMenuToggle }) => {
     content: '""',
     position: "absolute",
     bottom: -32,
-    left: "510px",
+    left: "380px",
     transform: "translateX(-50%) rotate(180deg)",
     width: "0",
     height: "0",
@@ -92,69 +92,69 @@ const Header = ({ onMenuToggle }) => {
     borderTop: `7px solid ${active || hover ? "white" : "transparent"}`,
     transition: "border-top 0.3s ease",
   });
-  const menu = (
-    <Menu
-      className="custom-dropdown-menu"
-      style={{
-        backgroundColor: "#2a2a2a",
-        color: "#4e4e4e",
-        marginTop: "30px",
-      }}
-    >
-      <Menu.Item key="1">
-        <Link
-          className="block text-gray-900 px-8 py-2 tracking-wider text-base mt-2"
-          to="/dang-ky-bao-gia-thiet-ke-nha-vuon"
-          onMouseEnter={() => setHoverItem("/bao-gia")}
-          onMouseLeave={() => setHoverItem(null)}
-          style={{
-            color: "#989898",
-          }}
-        >
-          Báo giá thiết kế nhà vườn
-        </Link>
-      </Menu.Item>
-      <Menu.Item key="2">
-        <Link
-          className="block text-gray-900 px-8 py-2 tracking-wider text-base"
-          to="/dang-ky-bao-gia-thiet-ke-san-vuon"
-          onMouseEnter={() => setHoverItem("/bao-gia")}
-          onMouseLeave={() => setHoverItem(null)}
-          style={{
-            color: "#989898",
-          }}
-        >
-          Báo giá thiết kế sân vườn
-        </Link>
-      </Menu.Item>
-      <Menu.Item key="3">
-        <Link
-          className="block text-gray-900 px-8 py-2 tracking-wider text-base"
-          to="/dang-ky-bao-gia-thiet-ke-farmstay"
-          onMouseEnter={() => setHoverItem("/bao-gia")}
-          onMouseLeave={() => setHoverItem(null)}
-          style={{
-            color: "#989898",
-          }}
-        >
-          Báo giá thiết kế farmstay
-        </Link>
-      </Menu.Item>
-      <Menu.Item key="4">
-        <Link
-          className="block text-gray-900 px-8 py-2 tracking-wider text-base mb-2"
-          to="/dang-ky-bao-gia-thiet-ke-khu-dich-vu"
-          onMouseEnter={() => setHoverItem("/bao-gia")}
-          onMouseLeave={() => setHoverItem(null)}
-          style={{
-            color: "#989898",
-          }}
-        >
-          Báo giá thiết kế khu dịch vụ
-        </Link>
-      </Menu.Item>
-    </Menu>
-  );
+  // const menu = (
+  //   <Menu
+  //     className="custom-dropdown-menu"
+  //     style={{
+  //       backgroundColor: "#2a2a2a",
+  //       color: "#4e4e4e",
+  //       marginTop: "30px",
+  //     }}
+  //   >
+  //     <Menu.Item key="1">
+  //       <Link
+  //         className="block text-gray-900 px-8 py-2 tracking-wider text-base mt-2"
+  //         to="/dang-ky-bao-gia-thiet-ke-nha-vuon"
+  //         onMouseEnter={() => setHoverItem("/bao-gia")}
+  //         onMouseLeave={() => setHoverItem(null)}
+  //         style={{
+  //           color: "#989898",
+  //         }}
+  //       >
+  //         Báo giá thiết kế nhà vườn
+  //       </Link>
+  //     </Menu.Item>
+  //     <Menu.Item key="2">
+  //       <Link
+  //         className="block text-gray-900 px-8 py-2 tracking-wider text-base"
+  //         to="/dang-ky-bao-gia-thiet-ke-san-vuon"
+  //         onMouseEnter={() => setHoverItem("/bao-gia")}
+  //         onMouseLeave={() => setHoverItem(null)}
+  //         style={{
+  //           color: "#989898",
+  //         }}
+  //       >
+  //         Báo giá thiết kế sân vườn
+  //       </Link>
+  //     </Menu.Item>
+  //     <Menu.Item key="3">
+  //       <Link
+  //         className="block text-gray-900 px-8 py-2 tracking-wider text-base"
+  //         to="/dang-ky-bao-gia-thiet-ke-farmstay"
+  //         onMouseEnter={() => setHoverItem("/bao-gia")}
+  //         onMouseLeave={() => setHoverItem(null)}
+  //         style={{
+  //           color: "#989898",
+  //         }}
+  //       >
+  //         Báo giá thiết kế farmstay
+  //       </Link>
+  //     </Menu.Item>
+  //     <Menu.Item key="4">
+  //       <Link
+  //         className="block text-gray-900 px-8 py-2 tracking-wider text-base mb-2"
+  //         to="/dang-ky-bao-gia-thiet-ke-khu-dich-vu"
+  //         onMouseEnter={() => setHoverItem("/bao-gia")}
+  //         onMouseLeave={() => setHoverItem(null)}
+  //         style={{
+  //           color: "#989898",
+  //         }}
+  //       >
+  //         Báo giá thiết kế khu dịch vụ
+  //       </Link>
+  //     </Menu.Item>
+  //   </Menu>
+  // );
   const menu1 = (
     <Menu
       className="custom-dropdown-menu"
@@ -167,56 +167,45 @@ const Header = ({ onMenuToggle }) => {
       <Menu.Item key="1">
         <Link
           className="block text-gray-900 px-8 py-2 tracking-wider text-base mt-2"
-          to="/thiet-ke-kien-truc"
+          to="/thiet-ke-cua-hang-an-uong"
           style={{
             color: "#989898",
           }}
         >
-          Thiết Kế Và Thi Công Kiến Trúc
+          Thiết Kế Và Thi Công CỬA HÀNG ĂN UỐNG
         </Link>
       </Menu.Item>
       <Menu.Item key="2">
         <Link
           className="block text-gray-900 px-8 py-2 tracking-wider text-base"
-          to="/thiet-ke-canh-quan"
+          to="/thiet-ke-can-ho"
           style={{
             color: "#989898",
           }}
         >
-          Thiết Kế Và Thi Công Cảnh Quan
+          Thiết Kế Và Thi Công CĂN HỘ - BIỆT THỰ - KHU NGHỈ DƯỠNG
         </Link>
       </Menu.Item>
       <Menu.Item key="3">
         <Link
           className="block text-gray-900 px-8 py-2 tracking-wider text-base"
-          to="/thiet-ke-nha-vuon"
+          to="/thiet-ke-cua-hang-kinh-doanh"
           style={{
             color: "#989898",
           }}
         >
-          Thiết Kế Và Thi Công Nhà Vườn
+          Thiết Kế Và Thi Công CỬA HÀNG KINH DOANH
         </Link>
       </Menu.Item>
       <Menu.Item key="4">
         <Link
           className="block text-gray-900 px-8 py-2 tracking-wider text-base mb-2"
-          to="/thiet-ke-san-vuon"
+          to="/thiet-ke-cong-trinh-cong-cong"
           style={{
             color: "#989898",
           }}
         >
-          Thiết Kế Và Thi Công Sân Vườn
-        </Link>
-      </Menu.Item>
-      <Menu.Item key="5">
-        <Link
-          className="block text-gray-900 px-8 py-2 tracking-wider text-base mb-2"
-          to="/thiet-ke-ho-ca-koi"
-          style={{
-            color: "#989898",
-          }}
-        >
-          Thiết Kế Và Thi Công Hồ Cá Koi
+          Thiết Kế Và Thi Công CÔNG TRÌNH CÔNG CỘNG
         </Link>
       </Menu.Item>
     </Menu>
@@ -309,7 +298,7 @@ const Header = ({ onMenuToggle }) => {
                   />
                 </Link>
               </Dropdown>
-              <Dropdown
+              {/* <Dropdown
                 overlay={menu}
                 trigger={["hover"]}
                 placement="bottomLeft"
@@ -328,8 +317,8 @@ const Header = ({ onMenuToggle }) => {
                     )}
                   />
                 </Link>
-              </Dropdown>
-              <Link
+              </Dropdown> */}
+              {/* <Link
                 to="/blog"
                 className="text-white px-3 py-2 rounded-md text-md font-normal"
                 style={arrowStyle(
@@ -344,7 +333,7 @@ const Header = ({ onMenuToggle }) => {
                     activeItem === "/blog" || hoverItem === "/blog"
                   )}
                 />
-              </Link>
+              </Link> */}
               <Link
                 to="/lien-he"
                 className="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-md font-normal"
@@ -456,42 +445,35 @@ const Header = ({ onMenuToggle }) => {
                 <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 mt-2">
                   <Link
                     onClick={toggleMenu}
-                    to="/thiet-ke-kien-truc"
+                    to="/thiet-ke-cua-hang-an-uong"
                     className="text-white border-[#3a3a3a] border-b-[2px] block px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    Thiết Kế Và Thi Công Kiến Trúc
+                    Thiết Kế Cửa Hàng Ăn Uống
                   </Link>
                   <Link
                     onClick={toggleMenu}
-                    to="/thiet-ke-canh-quan"
+                    to="/thiet-ke-can-ho"
                     className="text-white border-[#3a3a3a] border-b-[2px] block px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    Thiết Kế Và Thi Công Cảnh Quan
+                    Thiết Kế Và Thi Công CĂN HỘ - BIỆT THỰ - KHU NGHỈ DƯỠNG
                   </Link>
                   <Link
                     onClick={toggleMenu}
-                    to="/thiet-ke-nha-vuon"
+                    to="/thiet-ke-cua-hang-kinh-doanh"
                     className="text-white border-[#3a3a3a] border-b-[2px] block px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    Thiết Kế Và Thi Công Nhà Vườn
+                    Thiết Kế Và Thi Công CỬA HÀNG KINH DOANH
                   </Link>
                   <Link
                     onClick={toggleMenu}
                     to="/thiet-ke-san-vuon"
                     className="text-white border-[#3a3a3a] border-b-[2px] block px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    Thiết Kế Và Thi Công Sân Vườn
-                  </Link>
-                  <Link
-                    onClick={toggleMenu}
-                    to="/thiet-ke-ho-ca-koi"
-                    className="text-white border-[#3a3a3a] border-b-[2px] block px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Thiết Kế Và Thi Công Hồ Cá Koi
+                    Thiết Kế Và Thi Công CÔNG TRÌNH CÔNG CỘNG
                   </Link>
                 </div>
               )}
-              <div className="text-white border-[#3a3a3a] pb-3 border-b-[2px] px-3 py-2 rounded-md text-sm font-medium flex items-center">
+              {/* <div className="text-white border-[#3a3a3a] pb-3 border-b-[2px] px-3 py-2 rounded-md text-sm font-medium flex items-center">
                 <Link onClick={toggleMenu} to="/bao-gia" className="flex-grow">
                   BÁO GIÁ
                 </Link>
@@ -508,8 +490,8 @@ const Header = ({ onMenuToggle }) => {
                     aria-hidden="true"
                   />
                 )}
-              </div>
-              {isDropdownOpen1 && (
+              </div> */}
+              {/* {isDropdownOpen1 && (
                 <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 mt-2">
                   <Link
                     onClick={toggleMenu}
@@ -540,14 +522,14 @@ const Header = ({ onMenuToggle }) => {
                     Báo giá thiết kế khu dịch vụ
                   </Link>
                 </div>
-              )}
-              <Link
+              )} */}
+              {/* <Link
                 onClick={toggleMenu}
                 to="/blog"
                 className="text-white border-[#3a3a3a] pb-3 border-b-[2px] px-3 py-2 rounded-md text-sm font-medium flex items-center"
               >
                 BLOG
-              </Link>
+              </Link> */}
               <Link
                 onClick={toggleMenu}
                 to="/lien-he"

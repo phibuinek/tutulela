@@ -34,7 +34,7 @@ const Home = ({ isMenuOpen }) => {
         <div className="lg:col-span-1 lg:mt-48 mt-24">
           <Image src={require("../assets/lang-thong-dong-masterplan.jpg")} />
         </div>
-        <div className="lg:col-span-1 lg:pt-36 pt-24 lg:pl-20 lg:ml-4 lg:border-[#e5e5e5] lg:border-l-[1px]">
+        <div className="lg:col-span-1 lg:pt-36 pt-24 lg:pl-20 lg:ml-4 lg:border-[#e5e5e5] lg:border-l-[1px] text-justify">
           <div className="lg:grid lg:grid-cols-2">
             <div className="lg:col-span-1 lg:mt-20">
               <h1 className="text-lg font-semibold text-[#aaa9a9]">
@@ -47,24 +47,129 @@ const Home = ({ isMenuOpen }) => {
             </div>
           </div>
           <div className="mt-4 text-lg">
-            Chúng tôi hoạt động trong lĩnh vực tư vấn thiết kế kiến trúc, thiết
-            kế cảnh quan, thiết kế sân vườn, thi công sân vườn biệt thự, thiết
-            kế vườn Nhật, thiết kế hồ cá Koi,… <br />{" "}
-            <li className="mt-8">
-              Thiết kế kiến trúc biệt thự vườn, nhà vườn, nhà dịch vụ
-            </li>
-            <li>Tư vấn quy hoạch và thiết kế cảnh quan</li>
-            <li>Quản lý dự án, giám sát thi công kiến trúc, cảnh quan</li>
+            Xin chào, chúng tôi là TUTULELA HOUSE PLANTS DECOR + <br />
+            TUTULELA HOUSE PLANTS DECOR + là công ty chuyên thiết kế - thi công-
+            hoàn thiện cảnh quan cây xanh nội - ngoại thất cho các công trình
+            bao gồm: <br />
+            <li className="mt-8">Cửa hàng ăn uống (Quán Cafe - Nhà Hàng)</li>
+            <li>Cửa hàng kinh doanh (Showroom, Spa, Shop,...)</li>
             <li>
-              Thi công công trình kiến trúc, cảnh quan, sân vườn biệt thự cao
-              cấp
+              {" "}
+              Căn hộ - Biệt Thự - Khu nghỉ dưỡng ( Khách sạn, resort,...) Công
+              trình công cộng
             </li>
-            <div className="mt-8">
-              Với nhiều năm kinh nghiệm về thiết kế và thi công cảnh quan & kiến
-              trúc đặc biệt là thiết kế nhà vườn, thiết kế sân vườn biệt thự,
-              thiết kế vườn phong cách Nhật, thiết kế hồ cá Koi,… chúng tôi đã
-              thiết kế, thi công kiến trúc và cảnh quan cho nhiều dự án lớn trên
-              khắp cả nước.
+            <ul className="list-none mt-8">
+              <li className="content-['-'] mx-4">
+                - Với phương châm TRÁCH NHIỆM - TRUNG THỰC - UY TÍN, TUTULELA
+                HOUSE PLANTS DECOR + luôn tìm cách thấu hiểu nhu cầu và sở thích
+                để kiến tạo nên một không gian phủ sắc xanh tô điểm cho không
+                gian sống.
+              </li>
+              <li className="content-['-'] mx-4">
+                - Với kinh nghiệm đã thiết kế và hoàn thiện cảnh quan cây xanh
+                nội - ngoại thất cho nhiều dự án, chúng tôi hy vọng giúp được
+                quý khách hàng một cách nhiệt tình, chuyên nghiệp và hiệu quả
+                nhất, nhằm mang đến không gian gẫn gũi với thiên nhiên, tạo ra
+                không gian yên bình chân thật tại chính nơi khách hàng mong
+                muốn.
+              </li>
+            </ul>
+            <div className="mt-8">4 Lý do nên chọn Tutulela:</div>
+            <ol className="mt-4 list-decimal ml-6">
+              <li>
+                <strong>Đội Ngũ Tận Tâm:</strong> Khảo sát và tư vấn miễn phí.
+                Thiết kế sáng tạo, phù hợp với sở thích và nhu cầu của khách
+                hàng. Thi công chuyên nghiệp, đảm bảo chất lượng và tiến độ.
+              </li>
+              <li>
+                <strong>Dịch vụ trọn gói:</strong> Cung cấp dịch vụ thi công
+                trọn gói, bắt đầu từ việc tư vấn, thiết kế, thi công cho đến
+                hoàn thiện và cuối cùng là bảo dưỡng, duy trình cảnh quan công
+                trình.{" "}
+              </li>
+              <li>
+                <strong>Giá cả hợp lý:</strong> Chúng tôi tư vấn nhiều phương án
+                đa dạng thiết kế, thi công nhằm đáp ứng được nhu cầu và phù hợp
+                ngân sách của khách hàng yêu cầu.
+              </li>
+              <li>
+                <strong>Bảo hành sau thi công:</strong> Sau khi hoàn thiện,
+                Tutulela House Plants Decor tự tin vào chất lượng công trình
+                mình thực hiện và cam kết bảo hành.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div className="mt-10 lg:ml-24 ml-4">
+          <div className="text-lg font-semibold text-[#aaa9a9]">
+            ( CUSTOMERS )
+          </div>
+          <div className="text-4xl text-black font-bold mt-2">Khách hàng</div>
+        </div>
+        <div className="grid grid-cols-[repeat(auto-fill,_minmax(350px,_1fr))] lg:pl-24 md:pl-12 pl-4">
+          <div className="w-[390px] mt-10 group">
+            <Image
+              className="w-[400px] h-[250px]"
+              src={require("../assets/z6090066733320_715dd5dd45eb32081c66a92ab422fe5c.jpg")}
+            />
+            <div className="text-xl font-bold bg-[#7a7a7a] text-white py-2 text-center">
+              SPA
+            </div>
+          </div>
+          <div className="w-[390px] mt-10 group">
+            <Image
+              className="w-[400px] h-[250px]"
+              src={require("../assets/278283053_129845382989627_2320831166963588174_n.jpg")}
+            />
+            <div className="text-xl font-bold bg-[#7a7a7a] text-white py-2 text-center">
+              Cafe
+            </div>
+          </div>
+          <div className="w-[390px] mt-10 group">
+            <Image
+              className="w-[400px] h-[250px]"
+              src={require("../assets/z6090070230314_cd732273b7683ee5d08cee2f6656cc21.jpg")}
+            />
+            <div className="text-xl font-bold bg-[#7a7a7a] text-white py-2 text-center">
+              Căn Hộ
+            </div>
+          </div>
+          <div className="w-[390px] mt-10 group">
+            <Image
+              className="w-[400px] h-[250px]"
+              src={require("../assets/z6090075425611_4c8b9d684e5f3627ca051ccb9ed0abfe.jpg")}
+            />
+            <div className="text-xl font-bold bg-[#7a7a7a] text-white py-2 text-center">
+              Công Ty
+            </div>
+          </div>
+          <div className="w-[390px] mt-10 group">
+            <Image
+              className="w-[400px] h-[250px]"
+              src={require("../assets/z6090077193497_338c17e857b4e35b19e09c775ad08f1e.jpg")}
+            />
+            <div className="text-xl font-bold bg-[#7a7a7a] text-white py-2 text-center">
+              Biệt thự
+            </div>
+          </div>
+          <div className="w-[390px] mt-10 group">
+            <Image
+              className="w-[400px] h-[250px]"
+              src={require("../assets/z6090084672503_8f0b7c148092b5ed7b0c417f7686bd90.jpg")}
+            />
+            <div className="text-xl font-bold bg-[#7a7a7a] text-white py-2 text-center">
+              Công trình công cộng
+            </div>
+          </div>
+          <div className="w-[390px] mt-10 group">
+            <Image
+              className="w-[400px] h-[250px]"
+              src={require("../assets/z6090088472913_a86eaa43ec7fdf08718a57dd1ac6d9b7.jpg")}
+            />
+            <div className="text-xl font-bold bg-[#7a7a7a] text-white py-2 text-center">
+              Resort
             </div>
           </div>
         </div>
@@ -76,58 +181,80 @@ const Home = ({ isMenuOpen }) => {
         <div className="text-4xl text-black font-bold mt-2">
           Dịch vụ chúng tôi cung cấp
         </div>
-        <div className="mt-6 grid grid-cols-[repeat(auto-fill,_minmax(300px,_1fr))] mb-4 mx-auto space-y-2">
+        <div className="text-2xl text-black font-bold mt-6">
+          A/ Thiết kế- Thi Công- Hoàn Thiện Công Trình
+        </div>
+        <div className="mt-2 grid grid-cols-[repeat(auto-fill,_minmax(300px,_1fr))] mb-4 mx-auto space-y-2">
           <div className="col-span-1 w-[300px] mt-2">
             <Link
-              to="/thiet-ke-canh-quan"
               className="flex space-x-4 border-2 border-[#7a7a7a] p-1 h-[90px] w-[300px]"
+              to="/thiet-ke-cua-hang-an-uong"
             >
               <div className="bg-[#7a7a7a] text-white font-bold text-5xl pt-3 pb-2 my-1 px-4">
                 1
               </div>
               <div className="mt-3 font-bold text-xl lg:text-2xl">
-                Thiết kế thi công cảnh quan
+                Cửa hàng ăn uống
               </div>
             </Link>
           </div>
-          <div className="col-span-1 w-[300px]">
-            <Link
-              to="/thiet-ke-nha-vuon"
-              className="flex space-x-4 border-2 border-[#7a7a7a] p-1 h-[90px] w-[300px]"
-            >
+          <Link
+            className="col-span-1 w-[300px]"
+            to="/thiet-ke-cua-hang-kinh-doanh"
+          >
+            <div className="flex space-x-4 border-2 border-[#7a7a7a] p-1 h-[90px] w-[300px]">
               <div className="bg-[#7a7a7a] text-white font-bold text-5xl pt-3 pb-2 my-1 px-4">
                 2
               </div>
               <div className="mt-3 font-bold text-xl lg:text-2xl">
-                Thiết kế thi công nhà vườn
+                Cửa hàng kinh doanh
               </div>
-            </Link>
-          </div>
-          <div className="col-span-1">
-            <Link
-              to="/thiet-ke-san-vuon"
-              className="flex space-x-4 border-2 border-[#7a7a7a] p-1 h-[90px] w-[300px]"
-            >
+            </div>
+          </Link>
+          <Link className="col-span-1" to="/thiet-ke-can-ho">
+            <div className="flex space-x-4 border-2 border-[#7a7a7a] p-1 h-[90px] w-[300px]">
               <div className="bg-[#7a7a7a] text-white font-bold text-5xl pt-3 pb-2 my-1 px-4">
                 3
               </div>
               <div className="mt-3 font-bold text-xl lg:text-2xl">
-                Thiết kế thi công sân vườn
+                Căn Hộ - Biệt thự - Khu nghỉ dưỡng
               </div>
-            </Link>
-          </div>
-          <div className="col-span-1">
-            <Link
-              to="/thiet-ke-ho-ca-koi"
-              className="flex space-x-4 border-2 border-[#7a7a7a] p-1 h-[90px] w-[300px]"
-            >
+            </div>
+          </Link>
+          <Link className="col-span-1" to="/thiet-ke-cong-trinh-cong-cong">
+            <div className="flex space-x-4 border-2 border-[#7a7a7a] p-1 h-[90px] w-[300px]">
               <div className="bg-[#7a7a7a] text-white font-bold text-5xl pt-3 pb-2 my-1 px-4">
                 4
               </div>
               <div className="mt-3 font-bold text-xl lg:text-2xl">
-                Thiết kế thi công hồ cá koi
+                Công trình công cộng
               </div>
-            </Link>
+            </div>
+          </Link>
+        </div>
+        <div className="text-2xl text-black font-bold mt-6">
+          B/ Bảo dưỡng công trình đã thực hiện:
+        </div>
+        <div className="mt-2 grid grid-cols-[repeat(auto-fill,_minmax(300px,_1fr))] mb-4 mx-auto space-y-2">
+          <div className="col-span-1 w-[300px] mt-2">
+            <div className="flex space-x-4 border-2 border-[#7a7a7a] p-1 h-[90px] w-[300px]">
+              <div className="bg-[#7a7a7a] text-white font-bold text-5xl pt-3 pb-2 my-1 px-4">
+                1
+              </div>
+              <div className="mt-3 font-bold text-xl lg:text-2xl">
+                Chăm sóc cây cối
+              </div>
+            </div>
+          </div>
+          <div className="col-span-1 w-[300px]">
+            <div className="flex space-x-4 border-2 border-[#7a7a7a] p-1 h-[90px] w-[300px]">
+              <div className="bg-[#7a7a7a] text-white font-bold text-5xl pt-3 pb-2 my-1 px-4">
+                2
+              </div>
+              <div className="mt-3 font-bold text-xl lg:text-2xl">
+                Cải tạo cảnh quan sau thi công
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -388,7 +515,7 @@ const Home = ({ isMenuOpen }) => {
           </div>
         </div>
       </div>
-      <div className="mt-24">
+      {/* <div className="mt-24">
         <div className="lg:flex lg:ml-24 ml-4 sm:text-center lg:text-left z-30">
           <div>
             <div className="text-lg font-semibold text-[#aaa9a9]">
@@ -507,7 +634,7 @@ const Home = ({ isMenuOpen }) => {
           />
           <div className="ml-1 mt-1">5 / 5 ( 9 bình chọn )</div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
