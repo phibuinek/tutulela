@@ -62,19 +62,23 @@ const blogs = [
 
 const blogUrls = {
   1: "/huong-dan-trong-va-cham-soc-hoa-hong-trong-chau",
-  2: "/thiet-ke-tieu-canh-trong-nha-dep-2024",
-  3: "/top-mau-thiet-ke-biet-thu-nghi-duong",
+  2: "/tieu-canh-trong-nha",
+  3: "/thiet-ke-biet-thu-nghi-duong",
+  4: "/den-san-vuon-dep",
+  5: "/top-nhung-quan-cafe-san-vuon-dep-o-sai-gon",
+  6: "/thiet-ke-biet-thu-nha-vuon",
   // Thêm các URL khác tương ứng với từng blog ID
 };
 
 const Blog = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 md:px-16 lg:px-56 pt-10">
+    <div className="grid grid-cols-[repeat(auto-fill,_minmax(300px,_1fr))] gap-6 px-4 md:px-16 lg:px-56 pt-10">
       {blogs.map((blog) => (
         <Link
           to={blogUrls[blog.id]} // Kiểm tra xem có URL cụ thể cho blog hay không, nếu không thì dùng đường dẫn mặc định
           key={blog.id}
-          className="bg-white shadow-md border-b-[3px] my-4 rounded-lg overflow-hidden w-[370px] h-[500px] mx-auto hover:shadow-2xl hover:cursor-pointer"
+          className="bg-white shadow-md border-b-[3px] my-4 rounded-lg overflow-hidden mx-auto hover:shadow-2xl hover:cursor-pointer"
+          style={{ maxWidth: "370px", minWidth: "300px", width: "100%" }}
         >
           <Image src={blog.image} className="w-full h-[250px] object-cover" />
           <div className="p-4">

@@ -4,40 +4,43 @@ import { Image } from "react-bootstrap";
 const Introduce = () => {
   return (
     <div>
-      <div className="lg:grid lg:grid-cols-2 lg:px-10 mt-10">
-        <div className="lg:col-span-1 lg:pl-24 pl-0">
+      <div className="grid grid-cols-[repeat(auto-fill,_minmax(700px,_1fr))] lg:px-10 mt-10">
+        <div className="col-span-1 lg:pl-24 pl-0">
           <Image
             className="max-w-[678px] max-h-[900px] lg:mt-16 lg:pl-24"
             src={require("../assets/background-about-us-e1700469663462.jpg")}
           />
         </div>
-        <div className="lg:col-span-1">
+        <div className="col-span-1">
           <h1 className="text-4xl font-bold mt-24">About Us</h1>
           <h1 className="text-lg mt-10 md:max-w-[600px] w-[400px] lg:w-full">
             <div className="mb-4">
-              Được thành lập từ năm 2013 với tên gọi ban đầu là CÔNG TY TNHH
-              TUTULELA.
+              Xin chào, chúng tôi là TUTULELA HOUSE PLANTS DECOR +
             </div>
             <div className="mb-4">
-              Đến năm 2019, sau khi trải qua quá trình tích luỹ kinh nghiệm và
-              phát triển, chúng tôi đổi tên thành CÔNG TY TNHH TUTULELA HOUSE
-              PLANT DECOR để phản ánh rõ hơn về chuyên môn hoạt động của mình.
+              TUTULELA HOUSE PLANTS DECOR + là công ty chuyên thiết kế - thi
+              công- hoàn thiện cảnh quan cây xanh nội - ngoại thất cho các công
+              trình bao gồm:
             </div>
             <div className="mb-4">
-              Trải qua các giai đoạn phát triển, năm 2021, chúng tôi đã tiến
-              hành tái cơ cấu bộ máy điều hành và vận hành, tăng cường năng lực
-              quản lý để đáp ứng mạnh mẽ với sự phức tạp ngày càng tăng của thị
-              trường kiến trúc và cảnh quan.
+              <li>Cửa hàng ăn uống (Quán Cafe - Nhà Hàng)</li>
+              <li>Cửa hàng kinh doanh (Showroom, Spa, Shop,...)</li>
+              <li>
+                Căn hộ - Biệt Thự - Khu nghỉ dưỡng ( Khách sạn, resort,...)
+              </li>
+              <li>Công trình công cộng</li>
             </div>
             <div className="mb-4">
-              Năm 2022, chúng tôi đã mở rộng và xác định lại các mảng dịch vụ
-              khách hàng, tập trung vào việc mang đến giải pháp sáng tạo và chất
-              lượng cho các dự án kiến trúc và cảnh quan.
+              Với phương châm TRÁCH NHIỆM - TRUNG THỰC - UY TÍN, TUTULELA HOUSE
+              PLANTS DECOR + luôn tìm cách thấu hiểu nhu cầu và sở thích để kiến
+              tạo nên một không gian phủ sắc xanh tô điểm cho không gian sống.
             </div>
             <div className="mb-4">
-              Năm 2023, chúng tôi kết hợp với các đối tác uy tín và thành lập
-              SGL Vietnam, nhằm tạo ra sự đa dạng và phong phú trong quy trình
-              sáng tạo và triển khai dự án.
+              Với kinh nghiệm đã thiết kế và hoàn thiện cảnh quan cây xanh nội -
+              ngoại thất cho nhiều dự án, chúng tôi hy vọng giúp được quý khách
+              hàng một cách nhiệt tình, chuyên nghiệp và hiệu quả nhất, nhằm
+              mang đến không gian gần gũi với thiên nhiên, tạo ra không gian yên
+              bình chân thật tại chính nơi khách hàng mong muốn.
             </div>
             <div className="mb-4">
               Chúng tôi tự hào tích lũy được nhiều kinh nghiệm quý báu thông qua
@@ -51,10 +54,21 @@ const Introduce = () => {
             </div>
             <div className="mb-4">
               Hãy đến và chia sẻ với chúng tôi về ý tưởng gian trong mơ của bạn,
-              SGL cam kết biến nó thành hiện thực, tạo nên không gian sống và
-              làm việc đẳng cấp và độc đáo.
+              Tutulela cam kết biến nó thành hiện thực, tạo nên không gian sống
+              và làm việc đẳng cấp và độc đáo.
             </div>
           </h1>
+          <button
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/1Wc2cvV1RrKHzsLDd_AUR5srzCdnMBT5d/view?usp=drive_link",
+                "_blank"
+              )
+            }
+            className="ml-auto lg:mr-48 py-4 inline-block px-9 text-white text-xs uppercase font-bold border border-[#1a1a1a] bg-[#1a1a1a] bg-gradient-to-r from-[#1a1a1a] to-[#1a1a1a] bg-[length:100%_100%] hover:bg-[length:0%_100%] transition-all duration-700 hover:text-black hover:bg-white"
+          >
+            XEM PORFOLIO
+          </button>
         </div>
       </div>
       <div className="lg:grid lg:grid-cols-2 lg:px-10 mt-10">
